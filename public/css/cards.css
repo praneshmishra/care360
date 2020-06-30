@@ -66,16 +66,12 @@ body{
     flex: 1;
 }
 
-.right-arrow:after {
-    content: '\2922';
-    font-size: 14px;
-    margin-right: 5px;
-    color: #808080;
-}
-.right-arrow .heartbox {
-    position: relative;
-    float: right;
-    width: 0;
+.expand-arrow {
+    width: 10px;
+    height: 10px;
+    right: 0;
+    position: absolute;
+    margin: 5px 8px;
 }
 /*heart*/
 
