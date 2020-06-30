@@ -40,11 +40,6 @@
     color: #363C3F;
 }
 
-.fa-user-circle-o.fa-6 {
-    font-size: 40px;
-    color: white;
-}
-
 #links > a {
     padding-left: 50px;
     font-size: 14px;
@@ -90,11 +85,6 @@ a.logout {
     font-size: 12px;
 }
 
-i.fa.fa-sign-out {
-    margin-right: 5px;
-    font-size: 18px;
-}
-
 i.fa.fa-comments {
     font-size: 20px;
     margin-right: 10px;
@@ -118,10 +108,6 @@ button.dropdown-btn {
     padding: 6px 8px 6px 34px;
 }
 
-i.fa.fa-caret-down {
-    margin-right: 14px;
-}
-
 #medication-links a {
     padding-left: 70px;
     display: none;
@@ -140,9 +126,34 @@ button.dropdown-btn.active {
     background-color: #E4F1FD;
 }
 
-button.dropdown-btn i.fa.fa-stethoscope {
+button.dropdown-btn i.fa.fa-caret-down {
+    margin-right: 15px;
+}
+
+.survey-icon, .diagnostic-icon, .vitals-icon, .medication-icon
+ {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+.home-icon, .helpline-icon, .favorites-icon,
+.resources-icon, .profile-icon {
+     height: 30px;
+    width: 30px;
     margin-right: 10px;
 }
-button.dropdown-btn i.fa.fa-caret-down {
-    margin-right: 10px;
+.logout-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.user-profile-icon {
+    height: 50px;
+    width: 50px;
+}
+
+a.list-group-item {
+    display: flex;
+    align-items: center;
 }
