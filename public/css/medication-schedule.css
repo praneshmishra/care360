@@ -1,0 +1,209 @@
+body {
+    background-color: rgb(219, 219, 219);
+}
+
+.breadcrumb {
+    background-color: #ffffff;
+    border-radius: 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+}
+
+.calendar {
+    background-color: #ffffff;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.calendar .carousel-item ul {
+    padding: 0 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.calendar .carousel-item ul li {
+    display: inline-block;
+    width: 18.6%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.calendar .carousel-item ul li:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.calendar .carousel-item ul li.active {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.calendar .carousel-item ul li span {
+    display: block;
+}
+
+.calendar .carousel-item ul li span + span {
+    font-size: 12px;
+}
+
+.calendar .carousel-control-prev, 
+.calendar .carousel-control-next {
+    width: auto;
+}
+
+.calendar .slide-control::before, 
+.calendar .slide-control::after{
+    display: inline-block;
+    color: #6c757d;
+    font-size: 24px;
+}
+
+.calendar .carousel-control-prev::before {
+    content: "<";
+}
+
+.calendar .carousel-control-next::before {
+    content: ">";
+}
+
+.container-fluid .schAccordion {
+    display: none;
+}
+
+.schAccordion[data-subscription="first-june"] {
+    display: block;
+}
+
+.schAccordion .card {
+    margin-top: 10px;
+    border-radius: 0;
+}
+
+.schAccordion .card .card-header {
+    border: 0;
+    background-color: #ffffff;
+}
+
+.schAccordion .card .card-header,
+.schAccordion .card .card-header h5 {
+    padding: 0;
+}
+
+.schAccordion .card-header button {
+    font-weight: 500;
+    text-decoration: none;
+    border: 0;
+    padding: .75rem 1.25rem;
+    width: 100%;
+    text-align: left;
+}
+
+.schAccordion .card-header button.collapsed::after {
+    content: "^";
+    font-size: 30px;
+    color: #ccc;
+    float: right;
+}
+
+.schAccordion .card-header button::after {
+    content: "V";
+    font-size: 20px;
+    color: #ccc;
+    float: right;
+}
+
+.schAccordion .card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.schAccordion .card-body .row {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin: 0 -8px;
+    margin-bottom: 7px;
+}
+
+.schAccordion .card-body .icon {
+    cursor: pointer;
+    background-color: rgb(250, 216, 215);
+    text-align: center;
+    color: rgb(198, 125, 125);
+    font-size: 22px;
+    padding: 0;
+    position: relative;
+}
+
+.schAccordion .card-body:nth-of-type(even) .icon {
+    background-color: rgb(235, 222, 249);
+    color: rgb(163, 104, 227);
+}
+
+.schAccordion .card-body .icon span {
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.schAccordion .card-body .info {
+    padding-right: 0;
+    margin: 7px 0; 
+}
+
+.schAccordion .card-body .info p {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.schAccordion .card-body .action.select-all {
+    padding-bottom: 20px;
+}
+
+.schAccordion .card-body .action.select-all span.notifyAll {
+    margin-right: 13px;
+}
+
+.schAccordion .card-body .action.select-all span p {
+    font-size: 12px;
+}
+
+.schAccordion .card-body .action {
+    position: relative;
+    padding-right: 0;
+}
+
+.schAccordion .card-body .action .align-center {
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.schAccordion .card-body .action span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.schAccordion .card-body .action span.alert-me.active, 
+.schAccordion .card-body .action span.checkAll.active {
+    background-color: rgb(236, 244, 196);
+    color: rgb(165, 189, 81);
+}
+
+.schAccordion .card-body .action span.notify.active, 
+.schAccordion .card-body .action span.notifyAll.active {
+    background-color: rgb(204, 231, 254);
+    color: rgb(57, 164, 251);
+}

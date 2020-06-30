@@ -1,0 +1,50 @@
+$('#calendarCarousel').carousel({
+    interval: false
+});
+
+$( document ).ready(function() {
+
+    $(".notify").click(function() {
+        $(this).toggleClass("active");
+    });
+
+    $(".alert-me").click(function() {
+        $(this).toggleClass("active");
+    });
+
+    $(".notifyAll").click(function() {
+        $(this).toggleClass("active");
+        var that = $(this);
+        $(this).parents(".collapse").find(".notify").each(function() {
+            selectAll($(this), that);
+        });
+    });
+
+    $(".checkAll").click(function() {
+        $(this).toggleClass("active");
+        var that = $(this);
+        $(this).parents(".collapse").find(".alert-me").each(function() {
+            selectAll($(this), that);
+        });
+    });
+
+    function selectAll(self, that) {
+        if(!self.hasClass("active")) {
+            self.addClass("active");
+        }
+
+        if(!that.hasClass("active")) {
+            self.removeClass("active");
+        }
+    }
+
+    $("#calendarCarousel li").click(function() {
+        $("#calendarCarousel li").removeClass("active");
+        $(this).addClass("active");
+        var selectedDate = $(this).data().date;
+        $(".schAccordion").each(function() {
+            selectedDate ===  $(this).data().subscription ? $(this).show() : $(this).hide();
+        })
+    });
+
+});
