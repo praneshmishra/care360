@@ -311,3 +311,77 @@ svg #main-circ {
         transform: scale(1)
     }
 }
+
+.cardContent {
+    display: none;
+}
+
+.cardContent .card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.cardContent .card-body .row {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin: 0 -8px;
+    margin-bottom: 7px;
+}
+
+.cardContent .card-body .icon {
+    cursor: pointer;
+    background-color: rgb(250, 216, 215);
+    text-align: center;
+    color: rgb(198, 125, 125);
+    font-size: 22px;
+    padding: 0;
+    position: relative;
+}
+
+.cardContent .card-body:nth-of-type(even) .icon {
+    background-color: rgb(235, 222, 249);
+    color: rgb(163, 104, 227);
+}
+
+.cardContent .card-body .icon span {
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.cardContent .card-body .info {
+    padding-right: 0;
+    margin: 7px 0;
+}
+
+.cardContent .card-body .info p {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.cardContent .card-body .action {
+    position: relative;
+    padding-right: 0;
+    margin-bottom: 0;
+}
+
+.cardContent .card-body .action .align-center {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.cardContent .card-body .action span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 10px;
+}

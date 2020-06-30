@@ -17,8 +17,8 @@
 
     <title>Medication</title>
 </head>
-
-<body class="bg-light">
+<!-- Removed class="bg-light" from body if needed add agian -->
+<body>
     <!-- Begin Side Drawer -->
     <div id="side-drawer" class="position-fixed">
         <div class="h-100 bg-white">
@@ -89,7 +89,7 @@
     <main class="container">
         <div class="m-3">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-4 showCardContent">
                     <img class="card-img-top" src="./public/images/icons8-pill-100.png" alt="Card">
                     <div class="card-text">
                         <h4>Medication</h4>
@@ -142,6 +142,23 @@
                     </div>
 
                 </div>
+                <div class="col-sm-4 cardContent">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
+                            <div class="col-7 col-sm-6 info">
+                                <h6>Clopidogrel 75 mg</h6>
+                                <p>1 pill, once per day before breakfast</p>
+                            </div>
+                            <div class="col-4 col-sm-4 action">
+                              <div class="align-center">
+                                <span class="notify">&#x271B;</span>
+                                <span class="alert-me">&#10003;</span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
                 <div class="col-sm-4">
                     <img class="card-img-top" src="./public/images/icons8-health-graph-50.png" alt="Card">
                     <div class="card-text">
