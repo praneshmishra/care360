@@ -81,7 +81,7 @@ div#other-links a {
 a.logout {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 3px;
     font-size: 12px;
 }
 
@@ -109,7 +109,7 @@ button.dropdown-btn {
 }
 
 #medication-links a {
-    padding-left: 70px;
+    padding-left: 90px;
     display: none;
 }
 
@@ -127,14 +127,14 @@ button.dropdown-btn.active {
 }
 
 button.dropdown-btn i.fa.fa-caret-down {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .survey-icon, .diagnostic-icon, .vitals-icon, .medication-icon
  {
     height: 30px;
     width: 30px;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 .home-icon, .helpline-icon, .favorites-icon,
 .resources-icon, .profile-icon {
@@ -145,7 +145,7 @@ button.dropdown-btn i.fa.fa-caret-down {
 .logout-icon {
     width: 25px;
     height: 25px;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 .user-profile-icon {
