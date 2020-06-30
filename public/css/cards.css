@@ -1,34 +1,50 @@
 body{
-    background-color: #d9d9d9;
+    background-color: #dddddd;
+    font-family: Roboto Medium;
+}
+.bg-light {
+    background-color: #dddddd !important;
 }
 
 .col-sm-4 {
     background-color: #fff;
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     padding: 5px;
+    border: 1px solid #dddddd;
+    /* border-bottom: 3px solid #6f7f89; */
 }
 .col-sm-4 p {
     font-size: 14px;
     margin: 0 0 5px 0;
+    color: #363c3f;
 }
 
 .col-sm-4 h4 {
     margin: 10px 0;
-    color: #366cd9;
+    color: #0051bf; 
 }
 
 .col-sm-4 a {
     font-size: 13px;
     margin: 0;
-    color: #366cd9;
+    color: #0051bf;
     text-decoration: none;
+}
+.col-sm-4 button {
+    font-size: 13px;
+    padding: 3px 5px;
+    margin-right: 7px;
+    color: #0051bf;
+    background-color: #e4f1fd;
+    border: none;
 }
 
 .col-sm-4 ul {
     margin: 0;
     padding: 0;
-    font-size: 11px;
+    font-size: 12px;
+    color: #363c3f;
 }
 
 .col-sm-4 ul li {
@@ -39,20 +55,37 @@ body{
     max-width: 50px;
     max-height: 50px;
     margin: auto 20px;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 50%;
+}
+
+.card-img-reminder {
+    max-width: 15px;
+    margin: 5px;
 }
 
 .card-text {
     flex: 1;
 }
 
+.right-arrow:after {
+    content: '\2922';
+    font-size: 14px;
+    margin-right: 5px;
+    color: #808080;
+}
+.right-arrow .heartbox {
+    position: relative;
+    float: right;
+    width: 0;
+}
 /*heart*/
 
 .heartbox {
     position: relative;
     float: right;
+}
+
+.heartbox label {
+    margin: 0;
 }
 
 svg {
