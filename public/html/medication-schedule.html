@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Medication Schedule page CSS -->
+    <link rel="stylesheet" href="public/css/medication-schedule.css">
+
+    <title>Medication Schedule</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active">Medication</li>
+        <li class="breadcrumb-item active" aria-current="page">Schedule</li>
+      </ol>
+    </nav>
+
+    <!-- calendar -->
+    <div class="container-fluid">
+        <div class="calendar col">
+            <p>June 03 Wednesday</p>
+            <div id="calendarCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <ul>
+                        <li class="active" data-date="first-june"><span>01</span><span>Mon</span></li>
+                        <li data-date="second-june"><span>02</span><span>Tue</span></li>
+                        <li><span>03</span><span>Wed</span></li>
+                        <li><span>04</span><span>Thu</span></li>
+                        <li><span>05</span><span>Fri</span></li>
+                    </ul>
+                  </div>
+                  <div class="carousel-item">
+                    <ul>
+                        <li><span>06</span><span>Mon</span></li>
+                        <li><span>07</span><span>Tue</span></li>
+                        <li><span>08</span><span>Wed</span></li>
+                        <li><span>09</span><span>Thu</span></li>
+                        <li><span>10</span><span>Fri</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <a class="carousel-control-prev slide-control" href="#calendarCarousel" role="button" data-slide="prev">
+                </a>
+                <a class="carousel-control-next slide-control" href="#calendarCarousel" role="button" data-slide="next">
+                </a>
+              </div>
+        </div>
+
+        <div id="scheduleAccordion" class="schAccordion" data-subscription="first-june">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Medication at 9 am
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#scheduleAccordion">
+                <div class="card-body mt-1 mb-3">
+                  <div class="row border-0">
+                      <div class="col-12 col-sm-12 action select-all">
+                        <span class="notifyAll">&#x271B;<br><p>ALL</p></span>
+                        <span class="checkAll">&#10003;<br><p>ALL</p></span>
+                      </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
+                        <div class="col-7 col-sm-6 info">
+                            <h6>Clopidogrel 75 mg</h6>
+                            <p>1 pill, once per day before breakfast</p>
+                        </div>
+                        <div class="col-4 col-sm-4 action">
+                          <div class="align-center">
+                            <span class="notify">&#x271B;</span>
+                            <span class="alert-me">&#10003;</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                      <div class="col-1 col-sm-2 icon"><span>&#x2687;</span></div>
+                      <div class="col-7 col-sm-6 info">
+                          <h6>Carvedilol 3.125 mg</h6>
+                          <p>1 pill, once per day after noon</p>
+                      </div>
+                      <div class="col-4 col-sm-4 action">
+                        <div class="align-center">
+                          <span class="notify">&#x271B;</span>
+                          <span class="alert-me">&#10003;</span>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                      <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
+                      <div class="col-7 col-sm-6 info">
+                          <h6>Augmentin 875 mg</h6>
+                          <p>1 pill, once per day before breakfast</p>
+                      </div>
+                      <div class="col-4 col-sm-4 action">
+                        <div class="align-center">
+                          <span class="notify">&#x271B;</span>
+                          <span class="alert-me">&#10003;</span>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                      <div class="col-1 col-sm-2 icon"><span>&#x2687;</span></div>
+                      <div class="col-7 col-sm-6 info">
+                          <h6>Pantoparzole 40 mg</h6>
+                          <p>1 pill, once per day before breakfast</p>
+                      </div>
+                      <div class="col-4 col-sm-4 action">
+                        <div class="align-center">
+                          <span class="notify">&#x271B;</span>
+                          <span class="alert-me">&#10003;</span>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                      <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
+                      <div class="col-7 col-sm-6 info">
+                          <h6>Metaformin 500 mg</h6>
+                          <p>1 pill, once per day before breakfast</p>
+                      </div>
+                      <div class="col-4 col-sm-4 action">
+                        <div class="align-center">
+                          <span class="notify">&#x271B;</span>
+                          <span class="alert-me">&#10003;</span>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Medication at 9 pm
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#scheduleAccordion">
+                <div class="card-body mt-1 mb-3">
+                  <div class="row border-0">
+                      <div class="col-12 col-sm-12 action select-all">
+                        <span class="notifyAll">&#x271B;<br><p>ALL</p></span>
+                        <span class="checkAll">&#10003;<br><p>ALL</p></span>
+                      </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
+                        <div class="col-7 col-sm-6 info">
+                            <h6>Clopidogrel 75 mg</h6>
+                            <p>1 pill, once per day before breakfast</p>
+                        </div>
+                        <div class="col-4 col-sm-4 action">
+                          <div class="align-center">
+                            <span class="notify">&#x271B;</span>
+                            <span class="alert-me">&#10003;</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                      <div class="col-1 col-sm-2 icon"><span>&#x2687;</span></div>
+                      <div class="col-7 col-sm-6 info">
+                          <h6>Carvedilol 3.125 mg</h6>
+                          <p>1 pill, once per day after noon</p>
+                      </div>
+                      <div class="col-4 col-sm-4 action">
+                        <div class="align-center">
+                          <span class="notify">&#x271B;</span>
+                          <span class="alert-me">&#10003;</span>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                      <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
+                      <div class="col-7 col-sm-6 info">
+                          <h6>Augmentin 875 mg</h6>
+                          <p>1 pill, once per day before breakfast</p>
+                      </div>
+                      <div class="col-4 col-sm-4 action">
+                        <div class="align-center">
+                          <span class="notify">&#x271B;</span>
+                          <span class="alert-me">&#10003;</span>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                      <div class="col-1 col-sm-2 icon"><span>&#x2687;</span></div>
+                      <div class="col-7 col-sm-6 info">
+                          <h6>Pantoparzole 40 mg</h6>
+                          <p>1 pill, once per day before breakfast</p>
+                      </div>
+                      <div class="col-4 col-sm-4 action">
+                        <div class="align-center">
+                          <span class="notify">&#x271B;</span>
+                          <span class="alert-me">&#10003;</span>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                      <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
+                      <div class="col-7 col-sm-6 info">
+                          <h6>Metaformin 500 mg</h6>
+                          <p>1 pill, once per day before breakfast</p>
+                      </div>
+                      <div class="col-4 col-sm-4 action">
+                        <div class="align-center">
+                          <span class="notify">&#x271B;</span>
+                          <span class="alert-me">&#10003;</span>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="scheduleAccordion1" class="schAccordion" data-subscription="second-june">
+          <div class="card">
+            <div class="card-header" id="headingOne_1">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne_1" aria-expanded="true" aria-controls="collapseOne_1">
+                  Medication at 10 am
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseOne_1" class="collapse show" aria-labelledby="headingOne_1" data-parent="#scheduleAccordion1">
+              <div class="card-body mt-1 mb-3">
+                <div class="row border-0">
+                    <div class="col-12 col-sm-12 action select-all">
+                      <span class="notifyAll">&#x271B;<br><p>ALL</p></span>
+                      <span class="checkAll">&#10003;<br><p>ALL</p></span>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
+                      <div class="col-7 col-sm-6 info">
+                          <h6>Clopidogrel 75 mg</h6>
+                          <p>1 pill, once per day before breakfast</p>
+                      </div>
+                      <div class="col-4 col-sm-4 action">
+                        <div class="align-center">
+                          <span class="notify">&#x271B;</span>
+                          <span class="alert-me">&#10003;</span>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                    <div class="col-1 col-sm-2 icon"><span>&#x2687;</span></div>
+                    <div class="col-7 col-sm-6 info">
+                        <h6>Carvedilol 3.125 mg</h6>
+                        <p>1 pill, once per day after noon</p>
+                    </div>
+                    <div class="col-4 col-sm-4 action">
+                      <div class="align-center">
+                        <span class="notify">&#x271B;</span>
+                        <span class="alert-me">&#10003;</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                    <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
+                    <div class="col-7 col-sm-6 info">
+                        <h6>Augmentin 875 mg</h6>
+                        <p>1 pill, once per day before breakfast</p>
+                    </div>
+                    <div class="col-4 col-sm-4 action">
+                      <div class="align-center">
+                        <span class="notify">&#x271B;</span>
+                        <span class="alert-me">&#10003;</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                    <div class="col-1 col-sm-2 icon"><span>&#x2687;</span></div>
+                    <div class="col-7 col-sm-6 info">
+                        <h6>Pantoparzole 40 mg</h6>
+                        <p>1 pill, once per day before breakfast</p>
+                    </div>
+                    <div class="col-4 col-sm-4 action">
+                      <div class="align-center">
+                        <span class="notify">&#x271B;</span>
+                        <span class="alert-me">&#10003;</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                    <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
+                    <div class="col-7 col-sm-6 info">
+                        <h6>Metaformin 500 mg</h6>
+                        <p>1 pill, once per day before breakfast</p>
+                    </div>
+                    <div class="col-4 col-sm-4 action">
+                      <div class="align-center">
+                        <span class="notify">&#x271B;</span>
+                        <span class="alert-me">&#10003;</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo_1">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo_1" aria-expanded="false" aria-controls="collapseTwo_1">
+                  Medication at 10 pm
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo_1" class="collapse" aria-labelledby="headingTwo_1" data-parent="#scheduleAccordion1">
+              <div class="card-body mt-1 mb-3">
+                <div class="row border-0">
+                    <div class="col-12 col-sm-12 action select-all">
+                      <span class="notifyAll">&#x271B;<br><p>ALL</p></span>
+                      <span class="checkAll">&#10003;<br><p>ALL</p></span>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
+                      <div class="col-7 col-sm-6 info">
+                          <h6>Clopidogrel 75 mg</h6>
+                          <p>1 pill, once per day before breakfast</p>
+                      </div>
+                      <div class="col-4 col-sm-4 action">
+                        <div class="align-center">
+                          <span class="notify">&#x271B;</span>
+                          <span class="alert-me">&#10003;</span>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                    <div class="col-1 col-sm-2 icon"><span>&#x2687;</span></div>
+                    <div class="col-7 col-sm-6 info">
+                        <h6>Carvedilol 3.125 mg</h6>
+                        <p>1 pill, once per day after noon</p>
+                    </div>
+                    <div class="col-4 col-sm-4 action">
+                      <div class="align-center">
+                        <span class="notify">&#x271B;</span>
+                        <span class="alert-me">&#10003;</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                    <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
+                    <div class="col-7 col-sm-6 info">
+                        <h6>Augmentin 875 mg</h6>
+                        <p>1 pill, once per day before breakfast</p>
+                    </div>
+                    <div class="col-4 col-sm-4 action">
+                      <div class="align-center">
+                        <span class="notify">&#x271B;</span>
+                        <span class="alert-me">&#10003;</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                    <div class="col-1 col-sm-2 icon"><span>&#x2687;</span></div>
+                    <div class="col-7 col-sm-6 info">
+                        <h6>Pantoparzole 40 mg</h6>
+                        <p>1 pill, once per day before breakfast</p>
+                    </div>
+                    <div class="col-4 col-sm-4 action">
+                      <div class="align-center">
+                        <span class="notify">&#x271B;</span>
+                        <span class="alert-me">&#10003;</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                    <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
+                    <div class="col-7 col-sm-6 info">
+                        <h6>Metaformin 500 mg</h6>
+                        <p>1 pill, once per day before breakfast</p>
+                    </div>
+                    <div class="col-4 col-sm-4 action">
+                      <div class="align-center">
+                        <span class="notify">&#x271B;</span>
+                        <span class="alert-me">&#10003;</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+     <!-- Page related JavaScript -->
+     <script src="js/medication-schedule.js"></script>
+  </body>
+</html>

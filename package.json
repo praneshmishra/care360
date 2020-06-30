@@ -1,0 +1,23 @@
+{
+  "name": "care360",
+  "version": "1.0.0",
+  "description": "**Author**: Daniel Lachica &middot;\r **Last Edited on**: May 20, 2020",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/invisionsTeam/care360.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/invisionsTeam/care360/issues"
+  },
+  "homepage": "https://github.com/invisionsTeam/care360#readme"
+}

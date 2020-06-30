@@ -1,5 +1,6 @@
 $(document).ready(function(){
+    $("main").load("/html/cards.html");
     $("#diagnostics").click(function(){
-        $("main").load("diagnostics.html");
+        $("main").load("/html/diagnostics.html");
     });
 });
