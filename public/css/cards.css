@@ -5,57 +5,65 @@ body{
     background-color: #dddddd !important;
 }
 
-/* removing border form col-sm-4, col-sm-4 is bootstrap class 
- * updating it without any parent selector or a unique class can break view,
- * where this col-sm-4 is used. Please update it.
-*/
-.col-sm-4 {
+.custom-col-sm-4.col-sm-4 {
     background-color: #fff;
     display: flex;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 5px;
+    border: 1px solid #dddddd;
 }
-.col-sm-4 p {
+
+.custom-col-sm-4.col-sm-4 h4 {
+    margin: 10px 0;
+    color: #0051bf; 
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+.custom-col-sm-4.col-sm-4 p {
     font-size: 14px;
     margin: 0 0 5px 0;
     color: #363c3f;
+    font-family: 'Roboto';
+    font-weight: 500;
 }
 
-.col-sm-4 h4 {
-    margin: 10px 0;
-    color: #0051bf; 
-}
-
-.col-sm-4 a {
+.custom-col-sm-4.col-sm-4 a {
     font-size: 13px;
     margin: 0;
     color: #0051bf;
     text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 500;
 }
-.col-sm-4 button {
+.custom-col-sm-4.col-sm-4 button {
     font-size: 13px;
     padding: 3px 5px;
     margin-right: 7px;
     color: #0051bf;
     background-color: #e4f1fd;
     border: none;
+    outline:none;
+    font-family: 'Roboto';
+    font-weight: 400;
 }
 
-.col-sm-4 ul {
+.custom-col-sm-4.col-sm-4 ul {
     margin: 0;
     padding: 0;
     font-size: 12px;
     color: #363c3f;
+    font-family: 'Roboto';
+    font-weight: 400;
 }
 
-.col-sm-4 ul li {
+.custom-col-sm-4.col-sm-4 ul li {
     list-style-type: none;
 }
 
-.card-img-top {
+.custom-card-img-top.card-img-top {
     max-width: 50px;
     max-height: 50px;
-    margin: auto 20px;
+    margin: auto 15px;
 }
 
 .card-img-reminder {
