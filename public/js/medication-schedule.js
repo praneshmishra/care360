@@ -47,6 +47,11 @@ $( document ).ready(function() {
         })
     });
 
+    $(".showCardContent").click(function() {
+        $(this).toggleClass("mb-0");
+        $(this).next(".cardContent").slideToggle();
+    });
+
     $("#toggelSchMed").click(function(){
 
     });
