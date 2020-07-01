@@ -10,6 +10,11 @@ app.use('/images', express.static(__dirname + '/public/images'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 router.get('/',function(req,res){
+  res.sendFile(path.join(__dirname+'/login.html'));
+  //__dirname : It will resolve to your project folder.
+});
+
+router.get('/index',function(req,res){
   res.sendFile(path.join(__dirname+'/index.html'));
   //__dirname : It will resolve to your project folder.
 });
