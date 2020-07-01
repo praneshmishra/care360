@@ -31,7 +31,7 @@ $(document).ready(function(){
         $(".link-bc-last").addClass("active");
     });
 
-    $(document).on('click','.link-bc-home',function(){
+    $(document).on('click','.link-home',function(){
         $("#breadcrumbs").hide();
         $("main").load("/html/cards.html");
     });
