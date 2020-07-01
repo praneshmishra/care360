@@ -47,4 +47,8 @@ $( document ).ready(function() {
         })
     });
 
+    $("#toggelSchMed").click(function(){
+
+    });
+
 });
