@@ -28,8 +28,35 @@
 
 .login_btn {
     width: 100%;
-    color: white;
     height: 40px;
+}
+
+.footer-or {
+    margin-top: -25px;
+}
+
+.roboto-regular {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.roboto-medium {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.text-gray {
+    color: #363c3f;
+}
+
+.text-blue {
+    color: #0051bf;
+}
+
+.text-white {
+    color: #ffffff;
 }
 
 .bg-blue {
@@ -38,4 +65,20 @@
 
 .bg-gray {
     background-color: #dbdbdb;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+.padding-b60 {
+    padding-bottom: 60px;
+}
+
+.margin-b10 {
+    margin-bottom: 10px;
+}
+
+.margin-b20 {
+    margin-bottom: 20px;
 }
