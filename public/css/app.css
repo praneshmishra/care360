@@ -5,3 +5,13 @@ html {
 .breadcrumb-item + .breadcrumb-item::before {
     content: ">";
 }
+
+#bc-secondary, #bc-last {
+    display: none;
+}
+
+#breadcrumbs {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+}
