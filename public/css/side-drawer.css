@@ -1,9 +1,11 @@
 #side-drawer {
     height: 100vh;
-    width: 336px;  /*Ideal width for sidebar accdg to https://forums.envato.com/t/standard-sidebar-width/75633*/
+    width: 336px;
+    /*Ideal width for sidebar accdg to https://forums.envato.com/t/standard-sidebar-width/75633*/
     top: 0;
     left: -336px;
-    z-index: 1032;  /*z-index of standard bootstrap navbar is 1030 + 1 offset due to side-drawer-void*/
+    z-index: 1032;
+    /*z-index of standard bootstrap navbar is 1030 + 1 offset due to side-drawer-void*/
     transition: left 0.25s ease;
 }
 
@@ -11,23 +13,147 @@
     height: 100%;
     width: 100%;
     top: 0;
-    z-index: 1031;  /*z-index of standard bootstrap navbar is 1030*/
-    background: rgba(0,0,0,.6);
+    z-index: 1031;
+    /*z-index of standard bootstrap navbar is 1030*/
+    background: rgba(0, 0, 0, .6);
 }
+
 .bg-dark {
     background-color: #0051BF!important;
 }
+
 .bg-primary {
     background-color: #0051BF!important;
 }
+
 .navbar-toggler {
     padding: .25rem 0rem;
     border: none;
 }
+
 .navbar-dark .navbar-toggler {
     border-color: transparent;
 }
-.list-group-item.active {
+
+.list-group-item.active, button.dropdown-btn.active {
     background-color: #E4F1FD;
-    color: #B4B6B7;
+    color: #363C3F;
+}
+
+#links > a {
+    padding-left: 50px;
+    font-size: 14px;
+    color: #363C3F;
+}
+
+div#other-links a {
+    padding-left: 25px;
+    font-size: 14px;
+    color: #363C3F;
+}
+
+#links a .fa {
+    margin-right: 10px;
+}
+
+#other-links a .fa {
+    margin-right: 15px;
+}
+
+.hr-divider {
+    border: 1px solid #E4E4E4;
+    margin: 10px 25px;
+}
+
+.col-9.user-info {
+    text-align: center;
+}
+
+.user-email {
+    font-size: 13px;
+    color: white;
+}
+
+.user-name {
+    color: white;
+}
+
+a.logout {
+    position: absolute;
+    bottom: 0;
+    right: 3px;
+    font-size: 12px;
+}
+
+i.fa.fa-comments {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+i.fa.fa-bell-o {
+    font-size: 20px;
+}
+
+button.dropdown-btn {
+    font-size: 14px;
+    color: #363C3F;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    padding: 6px 8px 6px 34px;
+}
+
+#medication-links a {
+    padding-left: 90px;
+    display: none;
+}
+
+#medication-links.active a {
+    background-color: #E4F1FD;
+}
+
+#medication-links > a {
+    font-size: 14px;
+    color: #363C3F;
+}
+
+button.dropdown-btn.active {
+    background-color: #E4F1FD;
+}
+
+button.dropdown-btn i.fa.fa-caret-down {
+    margin-right: 10px;
+}
+
+.survey-icon, .diagnostic-icon, .vitals-icon, .medication-icon
+ {
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+}
+.home-icon, .helpline-icon, .favorites-icon,
+.resources-icon, .profile-icon {
+     height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.logout-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+.user-profile-icon {
+    height: 50px;
+    width: 50px;
+}
+
+a.list-group-item {
+    display: flex;
+    align-items: center;
 }
