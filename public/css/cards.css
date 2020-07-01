@@ -361,6 +361,8 @@ svg #main-circ {
 .cardContent {
     display: none;
     border-top: 0;
+    background-color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .cardContent .card-body {

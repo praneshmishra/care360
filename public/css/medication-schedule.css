@@ -69,8 +69,9 @@ body {
     content: ">";
 }
 
-.container-fluid .schAccordion {
+.schAccordion {
     display: none;
+    margin-bottom: 55px;
 }
 
 .schAccordion[data-subscription="first-june"] {
@@ -206,4 +207,41 @@ body {
 .schAccordion .card-body .action span.notifyAll.active {
     background-color: rgb(204, 231, 254);
     color: rgb(57, 164, 251);
+}
+
+#toggelSchMed, 
+#toggelSchMed .btn-group {
+    bottom: 0;
+    width: 100%;
+}
+
+#toggelSchMed .btn-group label {
+    width: 50%;
+    border: 0;
+    border-radius: 0;
+    color: #555555;
+}
+
+#toggelSchMed .btn-group label.active {
+    border-top: 5px solid #007bff;
+}
+
+#toggelSchMed .btn-group label:focus {
+    outline: 0;
+    border-top: 5px solid #007bff;
+    box-shadow: none;
+}
+
+#toggelSchMed .btn-group label.focus {
+    box-shadow: none;
+}
+
+#toggelSchMed .btn-group label.schedule {
+    background: #ffffff url(../images/schedule/bottom-tab-calendar.svg) no-repeat 25px 8px;
+    background-size: 20px;
+}
+
+#toggelSchMed .btn-group label.medication {
+    background: #ffffff url(../images/schedule/bottom-tab-myMedication.svg) no-repeat 25px 10px;
+    background-size: 20px;
 }
