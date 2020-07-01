@@ -35,7 +35,7 @@
     border-color: transparent;
 }
 
-.list-group-item.active, button.dropdown-btn.active {
+.list-group-item.active, button.medication-btn.active {
     background-color: #E4F1FD;
     color: #363C3F;
 }
@@ -43,13 +43,21 @@
 #links > a {
     padding-left: 50px;
     font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 500;
     color: #363C3F;
+    padding-top: 10px;
+    padding-bottom: 10px
 }
 
 div#other-links a {
     padding-left: 25px;
     font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 500;
     color: #363C3F;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #links a .fa {
@@ -62,7 +70,7 @@ div#other-links a {
 
 .hr-divider {
     border: 1px solid #E4E4E4;
-    margin: 10px 25px;
+    margin: 20px 25px;
 }
 
 .col-9.user-info {
@@ -70,32 +78,42 @@ div#other-links a {
 }
 
 .user-email {
-    font-size: 13px;
-    color: white;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 500;
 }
 
 .user-name {
-    color: white;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-top: 5px;
 }
 
 a.logout {
     position: absolute;
     bottom: 0;
-    right: 3px;
-    font-size: 12px;
+    right: 5px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 500;
 }
 
-i.fa.fa-comments {
+.navbar-right i.fa.fa-comments {
     font-size: 20px;
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 i.fa.fa-bell-o {
     font-size: 20px;
 }
 
-button.dropdown-btn {
+button.medication-btn {
     font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 500;
     color: #363C3F;
     text-decoration: none;
     display: block;
@@ -105,7 +123,7 @@ button.dropdown-btn {
     text-align: left;
     cursor: pointer;
     outline: none;
-    padding: 6px 8px 6px 34px;
+    padding: 10px 8px 10px 34px;
 }
 
 #medication-links a {
@@ -120,21 +138,25 @@ button.dropdown-btn {
 #medication-links > a {
     font-size: 14px;
     color: #363C3F;
+    font-family: 'Roboto';
+    font-weight: 500;
+    padding-top: 0px;
 }
 
-button.dropdown-btn.active {
+button.medication-btn.active {
     background-color: #E4F1FD;
 }
 
-button.dropdown-btn i.fa.fa-caret-down {
+button.medication-btn i.fa.fa-caret-down {
     margin-right: 10px;
+    font-size: 12px;
 }
 
 .survey-icon, .diagnostic-icon, .vitals-icon, .medication-icon
  {
     height: 30px;
     width: 30px;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 .home-icon, .helpline-icon, .favorites-icon,
 .resources-icon, .profile-icon {
