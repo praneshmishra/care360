@@ -7,6 +7,7 @@ $(document).ready(function(){
         $("#breadcrumbs").show();
         if (!$(".diagnostics").length) {
             $(".survey").remove();
+            $(".medication").remove();
             $("#home").after("<li class='breadcrumb-item active diagnostics'>Diagnostics</li>"); 
         }
     });
@@ -16,7 +17,18 @@ $(document).ready(function(){
         $("#breadcrumbs").show();
         if (!$(".survey").length) {
             $(".diagnostics").remove();
+            $(".medication").remove();
             $("#home").after("<li class='breadcrumb-item active survey'>Survey</li>"); 
+        }
+    });
+
+    $(document).on('click','.medication-schedule',function(){
+        $("main").load("/html/medication-schedule.html");
+        $("#breadcrumbs").show();
+        if (!$(".medication").length) {
+            $(".survey").remove();
+            $(".diagnostics").remove();
+            $("#home").after("<li class='breadcrumb-item medication'>Medication</li><li class='breadcrumb-item active medication'>Schedule</li>"); 
         }
     });
 
