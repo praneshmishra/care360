@@ -5,12 +5,15 @@ body{
     background-color: #dddddd !important;
 }
 
+/* removing border form col-sm-4, col-sm-4 is bootstrap class 
+ * updating it without any parent selector or a unique class can break view,
+ * where this col-sm-4 is used. Please update it.
+*/
 .col-sm-4 {
     background-color: #fff;
     display: flex;
     margin-bottom: 5px;
     padding: 5px;
-    border: 1px solid #dddddd;
 }
 .col-sm-4 p {
     font-size: 14px;
@@ -339,8 +342,17 @@ svg #main-circ {
     }
 }
 
+.showCardContent.mb-0 {
+    border-bottom: 0;
+}
+
+.showCardContent {
+    position: relative;
+}
+
 .cardContent {
     display: none;
+    border-top: 0;
 }
 
 .cardContent .card-body {
@@ -355,6 +367,10 @@ svg #main-circ {
     margin-bottom: 7px;
 }
 
+.cardContent .med-alert-info .row {
+    height: 65px;
+}
+
 .cardContent .card-body .icon {
     cursor: pointer;
     background-color: rgb(250, 216, 215);
@@ -363,6 +379,18 @@ svg #main-circ {
     font-size: 22px;
     padding: 0;
     position: relative;
+}
+
+.cardContent .med-alert-info .alert {
+    padding: 0;
+    margin: 0;
+}
+
+.cardContent .med-alert-info .alert .blue-alert {
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 17px 0 0 5px;
+    text-align: center;
 }
 
 .cardContent .card-body:nth-of-type(even) .icon {
@@ -388,6 +416,10 @@ svg #main-circ {
     margin-bottom: 0;
 }
 
+.cardContent .med-alert-info .info p {
+    margin-top: 10px;
+}
+
 .cardContent .card-body .action {
     position: relative;
     padding-right: 0;
@@ -402,6 +434,10 @@ svg #main-circ {
     width: 100%;
 }
 
+.cardContent .med-alert-info .action .align-center {
+    top: 34%;
+}
+
 .cardContent .card-body .action span {
     width: 30px;
     height: 30px;
@@ -411,4 +447,20 @@ svg #main-circ {
     text-align: center;
     line-height: 30px;
     margin-left: 10px;
+}
+
+.cardContent .med-alert-info .action span p {
+    font-size: 13px;
+}
+
+.cardContent .card-body .action span.alert-me.active, 
+.cardContent .card-body .action span.checkAll.active {
+    background-color: rgb(236, 244, 196);
+    color: rgb(165, 189, 81);
+}
+
+.cardContent .card-body .action span.notify.active, 
+.cardContent .card-body .action span.notifyAll.active {
+    background-color: rgb(204, 231, 254);
+    color: rgb(57, 164, 251);
 }

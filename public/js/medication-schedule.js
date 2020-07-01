@@ -1,6 +1,6 @@
-$('#calendarCarousel').carousel({
+window.location.href.indexOf("medication-schedule") > -1 ? $('#calendarCarousel').carousel({
     interval: false
-});
+}) : false;
 
 $( document ).ready(function() {
 
@@ -15,7 +15,7 @@ $( document ).ready(function() {
     $(".notifyAll").click(function() {
         $(this).toggleClass("active");
         var that = $(this);
-        $(this).parents(".collapse").find(".notify").each(function() {
+        $(this).parents(".collapse, .cardContent").find(".notify").each(function() {
             selectAll($(this), that);
         });
     });
@@ -23,7 +23,7 @@ $( document ).ready(function() {
     $(".checkAll").click(function() {
         $(this).toggleClass("active");
         var that = $(this);
-        $(this).parents(".collapse").find(".alert-me").each(function() {
+        $(this).parents(".collapse, .cardContent").find(".alert-me").each(function() {
             selectAll($(this), that);
         });
     });

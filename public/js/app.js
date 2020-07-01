@@ -26,7 +26,7 @@ $(document).ready(function(){
     });
 
     $(".showCardContent").click(function(){
-        $(this).addClass("mb-0");
+        $(this).toggleClass("mb-0");
         $(this).next(".cardContent").slideToggle();
     })
 
