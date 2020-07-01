@@ -5,12 +5,15 @@ body{
     background-color: #dddddd !important;
 }
 
+/* removing border form col-sm-4, col-sm-4 is bootstrap class 
+ * updating it without any parent selector or a unique class can break view,
+ * where this col-sm-4 is used. Please update it.
+*/
 .col-sm-4 {
     background-color: #fff;
     display: flex;
     margin-bottom: 5px;
     padding: 5px;
-    border: 1px solid #dddddd;
 }
 .col-sm-4 p {
     font-size: 14px;
@@ -337,4 +340,127 @@ svg #main-circ {
     100% {
         transform: scale(1)
     }
+}
+
+.showCardContent.mb-0 {
+    border-bottom: 0;
+}
+
+.showCardContent {
+    position: relative;
+}
+
+.cardContent {
+    display: none;
+    border-top: 0;
+}
+
+.cardContent .card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.cardContent .card-body .row {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin: 0 -8px;
+    margin-bottom: 7px;
+}
+
+.cardContent .med-alert-info .row {
+    height: 65px;
+}
+
+.cardContent .card-body .icon {
+    cursor: pointer;
+    background-color: rgb(250, 216, 215);
+    text-align: center;
+    color: rgb(198, 125, 125);
+    font-size: 22px;
+    padding: 0;
+    position: relative;
+}
+
+.cardContent .med-alert-info .alert {
+    padding: 0;
+    margin: 0;
+}
+
+.cardContent .med-alert-info .alert .blue-alert {
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 17px 0 0 5px;
+    text-align: center;
+}
+
+.cardContent .card-body:nth-of-type(even) .icon {
+    background-color: rgb(235, 222, 249);
+    color: rgb(163, 104, 227);
+}
+
+.cardContent .card-body .icon span {
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.cardContent .card-body .info {
+    padding-right: 0;
+    margin: 7px 0;
+}
+
+.cardContent .card-body .info p {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.cardContent .med-alert-info .info p {
+    margin-top: 10px;
+}
+
+.cardContent .card-body .action {
+    position: relative;
+    padding-right: 0;
+    margin-bottom: 0;
+}
+
+.cardContent .card-body .action .align-center {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.cardContent .med-alert-info .action .align-center {
+    top: 34%;
+}
+
+.cardContent .card-body .action span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.cardContent .med-alert-info .action span p {
+    font-size: 13px;
+}
+
+.cardContent .card-body .action span.alert-me.active, 
+.cardContent .card-body .action span.checkAll.active {
+    background-color: rgb(236, 244, 196);
+    color: rgb(165, 189, 81);
+}
+
+.cardContent .card-body .action span.notify.active, 
+.cardContent .card-body .action span.notifyAll.active {
+    background-color: rgb(204, 231, 254);
+    color: rgb(57, 164, 251);
 }
