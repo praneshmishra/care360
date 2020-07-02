@@ -44,7 +44,11 @@
 .roboto-medium {
     font-family: 'Roboto';
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.border-white {
+    border-color: #efefef;
 }
 
 .text-gray {
