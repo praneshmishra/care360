@@ -401,6 +401,7 @@ svg #main-circ {
     color: #ffffff;
     margin: 17px 0 0 5px;
     text-align: center;
+    padding-bottom: 4px;
 }
 
 .cardContent .card-body:nth-of-type(even) .icon {
@@ -449,28 +450,37 @@ svg #main-circ {
 }
 
 .cardContent .card-body .action span {
+    float: right;
+    margin-left: 10px;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    background-color: #ddd;
-    float: right;
-    text-align: center;
-    line-height: 30px;
-    margin-left: 10px;
 }
 
 .cardContent .med-alert-info .action span p {
     font-size: 13px;
+    margin: 5px 0 0 7px
+}
+
+.cardContent .card-body .action span.alert-me, 
+.cardContent .card-body .action span.checkAll {
+    background: #ffffff url(../images/schedule/selected-disabled.svg) no-repeat;
+    background-size: 100%;
+}
+
+.cardContent .card-body .action span.notify, 
+.cardContent .card-body .action span.notifyAll {
+    background: #ffffff url(../images/schedule/snooze-disabled.svg) no-repeat;
+    background-size: 100%;
 }
 
 .cardContent .card-body .action span.alert-me.active, 
 .cardContent .card-body .action span.checkAll.active {
-    background-color: rgb(236, 244, 196);
-    color: rgb(165, 189, 81);
+    background: #ffffff url(../images/schedule/all-selected.svg) no-repeat;
+    background-size: 100%;
 }
 
 .cardContent .card-body .action span.notify.active, 
 .cardContent .card-body .action span.notifyAll.active {
-    background-color: rgb(204, 231, 254);
-    color: rgb(57, 164, 251);
+    background: #ffffff url(../images/schedule/snooze-selected.svg) no-repeat;
+    background-size: 100%;
 }
