@@ -128,10 +128,13 @@ button.medication-btn, button.diagnostic-btn {
 
 #medication-links a, #diagnostic-links a {
     padding-left: 90px;
+}
+
+.dropdown-container {
     display: none;
 }
 
-#medication-links.active a, #diagnostic-links.active a {
+.medication-btn.active + .dropdown-container a, .diagnostic-btn.active + .dropdown-container a {
     background-color: #E4F1FD;
 }
 

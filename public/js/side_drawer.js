@@ -6,10 +6,11 @@ $(document).ready(function () {
         closeSideDrawer($(this), event);
     });
     $('.side-nav-links > a').click(function () {
+        $('.list-group-item, .dropdown-btn').removeClass('active');
+        $('.side-nav-links .dropdown-container').hide();
         $(this).addClass('active').siblings().removeClass('active');
     });
-    toggleDiagnostic();
-    toggleMedication();
+    toggleMenu();
 });
 
 function openSideDrawer() {
@@ -28,43 +29,21 @@ function closeSideDrawer(thisObj, e) {
     }
 }
 
-function toggleMedication() {
+function toggleMenu() {
     /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    var dropdown = document.getElementsByClassName("medication-btn");
+    var dropdown = document.getElementsByClassName("dropdown-btn");
     var i;
 
     for (i = 0; i < dropdown.length; i++) {
         dropdown[i].addEventListener("click", function () {
             $('.list-group-item, .dropdown-btn').removeClass('active');
+            $('.side-nav-links .dropdown-container').hide();
             this.classList.toggle("active");
-            $('div#medication-links').toggleClass('active');
-            $('button.medication-btn').addClass('active');
-            var dropdownContent = $('#medication-links a');
-            if ($(dropdownContent).is(':visible') === false) {
-                $(dropdownContent).show();
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
             } else {
-                $(dropdownContent).hide();
-            }
-        });
-    }
-}
-
-function toggleDiagnostic() {
-    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    var dropdown = document.getElementsByClassName("diagnostic-btn");
-    var i;
-
-    for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function () {
-            $('.list-group-item, .dropdown-btn').removeClass('active');
-            this.classList.toggle("active");
-            $('div#diagnostic-links').toggleClass('active');
-            $('button.diagnostic-btn').addClass('active');
-            var dropdownContent = $('#diagnostic-links a');
-            if ($(dropdownContent).is(':visible') === false) {
-                $(dropdownContent).show();
-            } else {
-                $(dropdownContent).hide();
+                dropdownContent.style.display = "block";
             }
         });
     }
