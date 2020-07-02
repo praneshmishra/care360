@@ -35,7 +35,8 @@
     border-color: transparent;
 }
 
-.list-group-item.active, button.medication-btn.active {
+.list-group-item.active, button.medication-btn.active,
+button.diagnostic-btn.active {
     background-color: #E4F1FD;
     color: #363C3F;
 }
@@ -110,7 +111,7 @@ i.fa.fa-bell-o {
     font-size: 20px;
 }
 
-button.medication-btn {
+button.medication-btn, button.diagnostic-btn {
     font-size: 14px;
     font-family: 'Roboto';
     font-weight: 500;
@@ -126,16 +127,16 @@ button.medication-btn {
     padding: 10px 8px 10px 34px;
 }
 
-#medication-links a {
+#medication-links a, #diagnostic-links a {
     padding-left: 90px;
     display: none;
 }
 
-#medication-links.active a {
+#medication-links.active a, #diagnostic-links.active a {
     background-color: #E4F1FD;
 }
 
-#medication-links > a {
+#medication-links > a, #diagnostic-links > a {
     font-size: 14px;
     color: #363C3F;
     font-family: 'Roboto';
@@ -143,11 +144,11 @@ button.medication-btn {
     padding-top: 0px;
 }
 
-button.medication-btn.active {
+button.medication-btn.active, button.diagnostic-btn.active {
     background-color: #E4F1FD;
 }
 
-button.medication-btn i.fa.fa-caret-down {
+button.medication-btn i.fa.fa-caret-down, button.diagnostic-btn i.fa.fa-caret-down {
     margin-right: 10px;
     font-size: 12px;
 }
