@@ -25,10 +25,21 @@ $(document).ready(function(){
         $("main").load("/html/medication-schedule.html");
         $("#breadcrumbs").show();
         $(".link-bc-secondary").show();
-        $(".link-bc-secondary").html('<a href="javascript:void(0)" class="link-medication">Medication</a>');
-        $(".link-bc-secondary").removeClass("active");
+        $(".link-bc-secondary").text('Medication');
+        $(".link-bc-secondary").addClass("active");
         $(".link-bc-last").show();
         $(".link-bc-last").text("Schedule");
+        $(".link-bc-last").addClass("active");
+    });
+
+    $(document).on('click','.my-medication-link, #toggelSchMed .medication',function(){
+        $("main").load("/html/my-medications.html");
+        $("#breadcrumbs").show();
+        $(".link-bc-secondary").show();
+        $(".link-bc-secondary").text('Medication');
+        $(".link-bc-secondary").addClass("active");
+        $(".link-bc-last").show();
+        $(".link-bc-last").text("My Medications");
         $(".link-bc-last").addClass("active");
     });
 
@@ -40,17 +51,6 @@ $(document).ready(function(){
         $(".link-bc-secondary").removeClass("active");
         $(".link-bc-last").show();
         $(".link-bc-last").text("View");
-        $(".link-bc-last").addClass("active");
-    });
-
-    $(document).on('click','#toggelSchMed .medication',function(){
-        $("main").load("/html/my-medications.html");
-        $("#breadcrumbs").show();
-        $(".link-bc-secondary").show();
-        $(".link-bc-secondary").html('<a href="javascript:void(0)" class="link-diagnostic">Medication</a>');
-        $(".link-bc-secondary").removeClass("active");
-        $(".link-bc-last").show();
-        $(".link-bc-last").text("My Medications");
         $(".link-bc-last").addClass("active");
     });
 
