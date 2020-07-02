@@ -5,6 +5,9 @@ $(document).ready(function () {
     $('#links a, #other-links a, #side-drawer-void, button.medication-btn, button.diagnostic-btn').on('click', function () {
         closeSideDrawer($(this), event);
     });
+    $('.side-nav-links > a').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
     toggleDiagnostic();
     toggleMedication();
 });
