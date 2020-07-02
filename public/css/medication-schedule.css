@@ -1,7 +1,3 @@
-#MedicationWrap {
-    display: none;
-}
-
 .calendar {
     background-color: #ffffff;
     margin-top: 15px;
@@ -222,6 +218,7 @@
 
 #toggelSchMed, 
 #toggelSchMed .btn-group {
+    left: 0;
     bottom: 0;
     width: 100%;
 }
