@@ -1,14 +1,5 @@
-body {
-    background-color: rgb(219, 219, 219);
-}
-
-.breadcrumb {
-    background-color: #ffffff;
-    border-radius: 0;
-}
-
-.breadcrumb-item+.breadcrumb-item::before {
-    content: ">";
+#MedicationWrap {
+    display: none;
 }
 
 .calendar {
@@ -49,11 +40,6 @@ body {
     font-size: 12px;
 }
 
-.calendar .carousel-control-prev, 
-.calendar .carousel-control-next {
-    width: auto;
-}
-
 .calendar .slide-control::before, 
 .calendar .slide-control::after{
     display: inline-block;
@@ -61,12 +47,18 @@ body {
     font-size: 24px;
 }
 
-.calendar .carousel-control-prev::before {
-    content: "<";
+.calendar .carousel-control-prev {
+    background: #ffffff url(../images/schedule/calendar-previous.svg) no-repeat  0 15px;
+    background-size: 13px;
+    width: 20px;
+    opacity: 1;
 }
 
-.calendar .carousel-control-next::before {
-    content: ">";
+.calendar .carousel-control-next {
+    background: #ffffff url(../images/schedule/calendar-next.svg) no-repeat  0 15px;
+    background-size: 13px;
+    width: 20px;
+    opacity: 1;
 }
 
 .schAccordion {
@@ -100,21 +92,21 @@ body {
     padding: .75rem 1.25rem;
     width: 100%;
     text-align: left;
+    background: #ffffff url(../images/schedule/accordian-expand.svg) no-repeat 95% 20px;
+    background-size: 20px;
 }
 
-.schAccordion .card-header button.collapsed::after {
-    content: "^";
-    font-size: 30px;
-    color: #ccc;
-    float: right;
+.schAccordion .card-header button.collapsed {
+    background: #ffffff url(../images/schedule/accordian-collapse.svg) no-repeat 95% 20px;
+    background-size: 20px;
 }
 
-.schAccordion .card-header button::after {
+/* .schAccordion .card-header button::after {
     content: "V";
     font-size: 20px;
     color: #ccc;
     float: right;
-}
+} */
 
 .schAccordion .card-body {
     padding-top: 0;
@@ -166,11 +158,12 @@ body {
 }
 
 .schAccordion .card-body .action.select-all span.notifyAll {
-    margin-right: 13px;
+    margin-right: 10px;
 }
 
 .schAccordion .card-body .action.select-all span p {
     font-size: 12px;
+    margin: 5px 0  0 7px;
 }
 
 .schAccordion .card-body .action {
@@ -187,26 +180,44 @@ body {
 }
 
 .schAccordion .card-body .action span {
+    float: right;
+    margin-left: 10px;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    background-color: #ddd;
-    float: right;
-    text-align: center;
-    line-height: 30px;
-    margin-left: 10px;
+}
+
+.schAccordion .card-body .action span.alert-me, 
+.schAccordion .card-body .action span.checkAll {
+    background: #ffffff url(../images/schedule/selected-disabled.svg) no-repeat;
+    background-size: 100%;
+}
+
+.schAccordion .card-body .action span.notify, 
+.schAccordion .card-body .action span.notifyAll {
+    background: #ffffff url(../images/schedule/snooze-disabled.svg) no-repeat;
+    background-size: 100%;
 }
 
 .schAccordion .card-body .action span.alert-me.active, 
 .schAccordion .card-body .action span.checkAll.active {
-    background-color: rgb(236, 244, 196);
-    color: rgb(165, 189, 81);
+    background: #ffffff url(../images/schedule/all-selected.svg) no-repeat;
+    background-size: 100%;
 }
 
 .schAccordion .card-body .action span.notify.active, 
 .schAccordion .card-body .action span.notifyAll.active {
-    background-color: rgb(204, 231, 254);
-    color: rgb(57, 164, 251);
+    background: #ffffff url(../images/schedule/snooze-selected.svg) no-repeat;
+    background-size: 100%;
+}
+
+.schAccordion .card-body .action span.edit {
+    background: #ffffff url(../images/schedule/edit.svg) no-repeat;
+    background-size: 100%;
+}
+
+.schAccordion .card-body .action span.delete {
+    background: #ffffff url(../images/schedule/delete.svg) no-repeat;
+    background-size: 100%;
 }
 
 #toggelSchMed, 
@@ -232,7 +243,11 @@ body {
     box-shadow: none;
 }
 
-#toggelSchMed .btn-group label.focus {
+#toggelSchMed .btn-group label.focus, 
+#allMedicationOne .btn-link.focus,
+#allMedicationOne .btn-link:focus,
+#scheduleWrap .btn-link.focus, 
+#scheduleWrap .btn-link:focus {
     box-shadow: none;
 }
 

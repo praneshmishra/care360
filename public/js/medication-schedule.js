@@ -52,8 +52,16 @@ $( document ).ready(function() {
         $(this).next(".cardContent").slideToggle();
     });
 
-    $("#toggelSchMed").click(function(){
+    $("#toggelSchMed input").click(function() {
+        if($(this).data().val === "medication") {
+            $("#scheduleWrap").fadeOut("fast");
+            $("#MedicationWrap").fadeIn("fast");
+        }
 
+        if($(this).data().val === "schedule") {
+            $("#MedicationWrap").fadeOut("fast");
+            $("#scheduleWrap").fadeIn("fast");
+        }
     });
 
 });
