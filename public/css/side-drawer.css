@@ -1,7 +1,6 @@
 #side-drawer {
     height: 100vh;
     width: 336px;
-    /*Ideal width for sidebar accdg to https://forums.envato.com/t/standard-sidebar-width/75633*/
     top: 0;
     left: -336px;
     z-index: 1032;
@@ -18,11 +17,11 @@
     background: rgba(0, 0, 0, .6);
 }
 
-.bg-dark {
+.side-drawer-container.bg-dark {
     background-color: #0051BF!important;
 }
 
-.bg-primary {
+.navbar-header.bg-primary {
     background-color: #0051BF!important;
 }
 
@@ -44,7 +43,7 @@ button.diagnostic-btn.active {
 #links > a {
     padding-left: 50px;
     font-size: 14px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #363C3F;
     padding-top: 10px;
@@ -54,7 +53,7 @@ button.diagnostic-btn.active {
 div#other-links a {
     padding-left: 25px;
     font-size: 14px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #363C3F;
     padding-top: 10px;
@@ -81,14 +80,14 @@ div#other-links a {
 .user-email {
     color: #ffffff;
     font-size: 14px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
 .user-name {
     color: #ffffff;
     font-size: 18px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     margin-top: 5px;
 }
@@ -98,7 +97,7 @@ a.logout {
     bottom: 0;
     right: 5px;
     font-size: 14px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
@@ -113,7 +112,7 @@ i.fa.fa-bell-o {
 
 button.medication-btn, button.diagnostic-btn {
     font-size: 14px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #363C3F;
     text-decoration: none;
@@ -139,7 +138,7 @@ button.medication-btn, button.diagnostic-btn {
 #medication-links > a, #diagnostic-links > a {
     font-size: 14px;
     color: #363C3F;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     padding-top: 0px;
 }
@@ -168,7 +167,7 @@ button.medication-btn i.fa.fa-caret-down, button.diagnostic-btn i.fa.fa-caret-do
 .logout-icon {
     width: 25px;
     height: 25px;
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
 .user-profile-icon {
