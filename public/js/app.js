@@ -21,7 +21,7 @@ $(document).ready(function(){
         $(".link-bc-secondary").addClass("active");
     });
 
-    $(document).on('click','.medication-schedule',function(){
+    $(document).on('click','.medication-schedule, #toggelSchMed .schedule',function(){
         $("main").load("/html/medication-schedule.html");
         $("#breadcrumbs").show();
         $(".link-bc-secondary").show();
@@ -40,6 +40,17 @@ $(document).ready(function(){
         $(".link-bc-secondary").removeClass("active");
         $(".link-bc-last").show();
         $(".link-bc-last").text("View");
+        $(".link-bc-last").addClass("active");
+    });
+
+    $(document).on('click','#toggelSchMed .medication',function(){
+        $("main").load("/html/my-medications.html");
+        $("#breadcrumbs").show();
+        $(".link-bc-secondary").show();
+        $(".link-bc-secondary").html('<a href="javascript:void(0)" class="link-diagnostic">Medication</a>');
+        $(".link-bc-secondary").removeClass("active");
+        $(".link-bc-last").show();
+        $(".link-bc-last").text("My Medications");
         $(".link-bc-last").addClass("active");
     });
 
