@@ -76,6 +76,39 @@ $(document).ready(function(){
         $(".link-bc-last").addClass("active");
     });
 
+    $(document).on('click','.link-vitals, #toggleVitals .v-vitals',function(){
+        $("main").load("/html/vitals.html");
+        $("#breadcrumbs").show();
+        $(".link-bc-secondary").show();
+        $(".link-bc-secondary").html('<a href="javascript:void(0)" class="link-vitals">Vitals and Notes</a>');
+        $(".link-bc-secondary").removeClass("active");
+        $(".link-bc-last").show();
+        $(".link-bc-last").text("Vitals");
+        $(".link-bc-last").addClass("active");
+    });
+
+    $(document).on('click','#toggleVitals .v-ancillary',function(){
+        $("main").load("/html/vitals-ancillary.html");
+        $("#breadcrumbs").show();
+        $(".link-bc-secondary").show();
+        $(".link-bc-secondary").html('<a href="javascript:void(0)" class="link-vitals">Vitals and Notes</a>');
+        $(".link-bc-secondary").removeClass("active");
+        $(".link-bc-last").show();
+        $(".link-bc-last").text("Ancillary");
+        $(".link-bc-last").addClass("active");
+    });
+
+    $(document).on('click','#toggleVitals .v-view',function(){
+        $("main").load("/html/vitals-view.html");
+        $("#breadcrumbs").show();
+        $(".link-bc-secondary").show();
+        $(".link-bc-secondary").html('<a href="javascript:void(0)" class="link-vitals">Vitals and Notes</a>');
+        $(".link-bc-secondary").removeClass("active");
+        $(".link-bc-last").show();
+        $(".link-bc-last").text("View");
+        $(".link-bc-last").addClass("active");
+    });
+
     $(document).on('click','.link-home',function(){
         $("#breadcrumbs").hide();
         $("main").load("/html/cards.html");
