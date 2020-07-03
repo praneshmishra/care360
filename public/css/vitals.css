@@ -1,0 +1,42 @@
+#toggleVitals, 
+#toggleVitals .btn-group {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#toggleVitals .btn-group label {
+    width: 50%;
+    border: 0;
+    border-radius: 0;
+    color: #555555;
+}
+
+#toggleVitals .btn-group label.active {
+    border-top: 3px solid #0051bf;
+}
+
+#toggleVitals .btn-group label:focus {
+    outline: 0;
+    border-top: 3px solid #0051bf;
+    box-shadow: none;
+}
+
+#toggleVitals .btn-group label.focus {
+    box-shadow: none;
+}
+
+#toggleVitals .btn-group label.v-vitals {
+    background: #ffffff url(../images/vitals/vital-tab.svg) no-repeat 5px 8px;
+    background-size: 20px;
+}
+
+#toggleVitals .btn-group label.v-ancillary {
+    background: #ffffff url(../images/vitals/ancillary-tab.svg) no-repeat 10px 8px;
+    background-size: 20px;
+}
+
+#toggleVitals .btn-group label.v-view {
+    background: #ffffff url(../images/vitals/view-tab.svg) no-repeat 10px 10px;
+    background-size: 20px;
+}
