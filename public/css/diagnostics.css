@@ -1,0 +1,42 @@
+#toggleDiagnostics, 
+#toggleDiagnostics .btn-group {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#toggleDiagnostics .btn-group label {
+    width: 50%;
+    border: 0;
+    border-radius: 0;
+    color: #555555;
+}
+
+#toggleDiagnostics .btn-group label.active {
+    border-top: 3px solid #0051bf;
+}
+
+#toggleDiagnostics .btn-group label:focus {
+    outline: 0;
+    border-top: 3px solid #0051bf;
+    box-shadow: none;
+}
+
+#toggleDiagnostics .btn-group label.focus {
+    box-shadow: none;
+}
+
+#toggleDiagnostics .btn-group label.d-schedule {
+    background: #ffffff url(../images/Diagnostics/schedule-tab.svg) no-repeat 5px 8px;
+    background-size: 20px;
+}
+
+#toggleDiagnostics .btn-group label.d-results {
+    background: #ffffff url(../images/Diagnostics/results-tab.svg) no-repeat 10px 8px;
+    background-size: 20px;
+}
+
+#toggleDiagnostics .btn-group label.d-view {
+    background: #ffffff url(../images//Diagnostics/view-tab.svg) no-repeat 10px 10px;
+    background-size: 20px;
+}

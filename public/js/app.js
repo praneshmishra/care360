@@ -43,14 +43,36 @@ $(document).ready(function(){
         $(".link-bc-last").addClass("active");
     });
 
-    $(document).on('click','.diagnostics-view',function(){
-        $("main").load("/html/diagnostics.html");
+    $(document).on('click','.diagnostics-schedule, #toggleDiagnostics .d-schedule',function(){
+        $("main").load("/html/diagnostics_schedule.html");
+        $("#breadcrumbs").show();
+        $(".link-bc-secondary").show();
+        $(".link-bc-secondary").html('<a href="javascript:void(0)" class="link-diagnostic">Diagnostics</a>');
+        $(".link-bc-secondary").removeClass("active");
+        $(".link-bc-last").show();
+        $(".link-bc-last").text("Schedule");
+        $(".link-bc-last").addClass("active");
+    });
+
+    $(document).on('click','.diagnostics-view, #toggleDiagnostics .d-view',function(){
+        $("main").load("/html/diagnostics_view.html");
         $("#breadcrumbs").show();
         $(".link-bc-secondary").show();
         $(".link-bc-secondary").html('<a href="javascript:void(0)" class="link-diagnostic">Diagnostics</a>');
         $(".link-bc-secondary").removeClass("active");
         $(".link-bc-last").show();
         $(".link-bc-last").text("View");
+        $(".link-bc-last").addClass("active");
+    });
+
+    $(document).on('click','.diagnostics-result, #toggleDiagnostics .d-results',function(){
+        $("main").load("/html/diagnostics_result.html");
+        $("#breadcrumbs").show();
+        $(".link-bc-secondary").show();
+        $(".link-bc-secondary").html('<a href="javascript:void(0)" class="link-diagnostic">Diagnostics</a>');
+        $(".link-bc-secondary").removeClass("active");
+        $(".link-bc-last").show();
+        $(".link-bc-last").text("Results");
         $(".link-bc-last").addClass("active");
     });
 
