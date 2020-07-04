@@ -40,3 +40,47 @@
     background: #ffffff url(../images/vitals/view-tab.svg) no-repeat 10px 10px;
     background-size: 20px;
 }
+/* vitals page styles */
+.vitals-form-group img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.vitals-form-group label {
+    margin-bottom: 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.vitals-form-group .vitals-form-control {
+    width: 50%;
+    border: 1px solid #B8B8B8;
+}
+
+.vitals-btn-group {
+    width: 100%;
+}
+
+.vitals-btn-group .btn {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.vitals-btn-group .btn-clear {
+    padding-left: 0;
+    width: 25%;
+    text-align: left;
+    color: #0051BF;
+}
+
+.vitals-btn-group .btn-save {
+    background-color: #0051BF;
+    border-radius: 0;
+    width: 75%;
+}
+
+
