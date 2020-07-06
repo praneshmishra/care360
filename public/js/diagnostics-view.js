@@ -5,13 +5,11 @@ $(document).on('click','#toggleView input', function() {
         $("#toggleView .btn-group label.v-graph").removeClass("active");
         $("#toggleView .btn-group label.v-grid input").attr("checked");
         $("#toggleView .btn-group label.v-graph input").removeAttr("checked");
-        alert("grid");
         $("#graphContent").fadeOut("fast");
         $("#gridContent").fadeIn("fast");
     }
 
     if($(this).data().val === "graph") {
-        alert("graph");
         $("#toggleView .btn-group label.v-graph input").attr("checked");
         $("#toggleView .btn-group label.v-grid input").removeAttr("checked");
         $("#gridContent").fadeOut("fast");
