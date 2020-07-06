@@ -257,3 +257,198 @@
     background: #ffffff url(../images/schedule/bottom-tab-myMedication.svg) no-repeat 25px 10px;
     background-size: 20px;
 }
+
+form.add-medication {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+form.add-medication .form-control {
+    font-size: 14px;
+}
+
+/* The custom checkbox */
+.customColorSel {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.customColorSel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.customColorSel .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(210, 230, 255);
+    border-radius: 3px;
+}
+
+/* On mouse-over, add a color background color */
+.customColorSel:hover input ~ .checkmark {
+    background-color: rgb(210, 230, 255);
+}
+
+/* When the checkbox is checked, add a blue background */
+.customColorSel input:checked ~ .checkmark {
+    /* background-color: #2196F3; */
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.customColorSel .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.customColorSel input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.customColorSel .checkmark:after {
+    left: 9px;
+    top: 4px;
+    width: 8px;
+    height: 13px;
+    border: solid rgb(0, 112, 249);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Different colors */
+.customColorSel.cyanColor .checkmark {
+    background-color: rgb(182, 255, 253);
+}
+
+/* On mouse-over, add a color background color */
+.customColorSel.cyanColor:hover input ~ .checkmark {
+    background-color: rgb(182, 255, 253);
+}
+
+.customColorSel.cyanColor .checkmark:after {
+    border: solid rgb(0, 204, 199);
+    border-width: 0 3px 3px 0;
+}
+
+.customColorSel.lightGreenColor .checkmark {
+    background-color: rgb(209, 239, 180);
+}
+
+/* On mouse-over, add a color background color */
+.customColorSel.lightGreenColor:hover input ~ .checkmark {
+    background-color: rgb(209, 239, 180);
+}
+
+.customColorSel.lightGreenColor .checkmark:after {
+    border: solid rgb(115, 189, 40);
+    border-width: 0 3px 3px 0;
+}
+
+.customColorSel.lightCreamColor .checkmark {
+    background-color: rgb(255, 204, 204);
+}
+
+/* On mouse-over, add a color background color */
+.customColorSel.lightCreamColor:hover input ~ .checkmark {
+    background-color: rgb(255, 204, 204);
+}
+
+.customColorSel.lightCreamColor .checkmark:after {
+    border: solid rgb(255, 134, 134);
+    border-width: 0 3px 3px 0;
+}
+
+/* Medicin Shape Checkbox */
+.customColorSel.medicineType {
+    padding-left: 55px;
+}
+
+.customColorSel.medicineType .checkmark {
+    background-size: 40px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.customColorSel.medicineType.medicine-shape1 {
+    padding-left: 65px;
+}
+
+.customColorSel.medicineType.medicine-shape1 .checkmark {
+    padding-top: 5px;
+    width: 50px;
+}
+
+.customColorSel.medicineType:last-of-type {
+    padding-left: 40px;
+}
+
+.customColorSel.medicineType.medicine-shape2 .checkmark, 
+.customColorSel.medicineType.medicine-shape3 .checkmark, 
+.customColorSel.medicineType.medicine-shape4 .checkmark, 
+.customColorSel.medicineType.medicine-shape5 .checkmark {
+    background-size: 30px;
+}
+
+.customColorSel.medicineType.medicine-shape1 .checkmark {
+    background-image: url(../images/schedule/medicine-shape1.svg);
+
+}
+
+.customColorSel.medicineType.medicine-shape2 .checkmark {
+    background-image: url(../images/schedule/medicine-shape2.svg);
+}
+
+.customColorSel.medicineType.medicine-shape3 .checkmark {
+    background-image: url(../images/schedule/medicine-shape3.svg);
+}
+
+.customColorSel.medicineType.medicine-shape4 .checkmark {
+    background-image: url(../images/schedule/medicine-shape4.svg);
+}
+
+.customColorSel.medicineType.medicine-shape5 .checkmark {
+    background-image: url(../images/schedule/medicine-shape5.svg);
+}
+
+/* Different colors */
+.customColorSel.medicineType .checkmark {
+    background-color: #ffffff;
+}
+
+/* On mouse-over, add a color background color */
+.customColorSel.medicineType:hover input ~ .checkmark {
+    background-color: #ffffff;
+}
+
+.customColorSel.medicineType input:checked ~ .checkmark {
+    background-color: #eeeeee;
+}
+
+.customColorSel.medicineType .checkmark:after {
+    background-color: transparent;
+    border: 0;
+}

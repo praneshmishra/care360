@@ -88,6 +88,7 @@
         </div>
       </div>
     </div>
+
     <div class="card">
       <div class="card-header" id="headingTwoamo">
         <h5 class="mb-0">
@@ -99,78 +100,118 @@
       </div>
       <div id="collapseTwoamo" class="collapse" aria-labelledby="headingTwoamo" data-parent="#allMedicationOne">
         <div class="card-body">
-          <div class="row">
-            <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
-            <div class="col-7 col-sm-6 info">
-              <h6>Clopidogrel 75 mg</h6>
-              <p>1 pill, once per day before breakfast</p>
-            </div>
-            <div class="col-4 col-sm-4 action">
-              <div class="align-center">
-                <span class="delete"></span>
-                <span class="edit"></span>
+          <div class="row border-0">
+            <form class="add-medication">
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">Medication</label>
+                <select class="form-control rounded-0" id="exampleFormControlSelect2">
+                  <option>Select or add new medication using typehead</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-1 col-sm-2 icon"><span>&#x2687;</span></div>
-            <div class="col-7 col-sm-6 info">
-              <h6>Carvedilol 3.125 mg</h6>
-              <p>1 pill, once per day after noon</p>
-            </div>
-            <div class="col-4 col-sm-4 action">
-              <div class="align-center">
-                <span class="delete"></span>
-                <span class="edit"></span>
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">Dose</label>
+                <select class="form-control rounded-0" id="exampleFormControlSelect2">
+                  <option>Select Dose</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
-            <div class="col-7 col-sm-6 info">
-              <h6>Augmentin 875 mg</h6>
-              <p>1 pill, once per day before breakfast</p>
-            </div>
-            <div class="col-4 col-sm-4 action">
-              <div class="align-center">
-                <span class="delete"></span>
-                <span class="edit"></span>
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">Frequency</label>
+                <select class="form-control rounded-0" id="exampleFormControlSelect2">
+                  <option>Select frequency</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-1 col-sm-2 icon"><span>&#x2687;</span></div>
-            <div class="col-7 col-sm-6 info">
-              <h6>Pantoparzole 40 mg</h6>
-              <p>1 pill, once per day before breakfast</p>
-            </div>
-            <div class="col-4 col-sm-4 action">
-              <div class="align-center">
-                <span class="delete"></span>
-                <span class="edit"></span>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Suggested Times</label>
+                <input type="email" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
-            <div class="col-7 col-sm-6 info">
-              <h6>Metaformin 500 mg</h6>
-              <p>1 pill, once per day before breakfast</p>
-            </div>
-            <div class="col-4 col-sm-4 action">
-              <div class="align-center">
-                <span class="delete"></span>
-                <span class="edit"></span>
+              <div class="form-group">
+                <label for="startDate">Start Date</label>
+                <div class="input-group mb-3"> 
+                  <input type="text" class="form-control rounded-0 border-right-0" id="startDate" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text border-left-0 bg-white" id="basic-addon1">
+                      <img src="../images/schedule/calendar.svg" width="20" alt="calendar">
+                    </span>
+                  </div>
+                </div>
               </div>
-            </div>
+              <div class="form-group">
+                <label for="endDate">End Date</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control rounded-0 border-right-0" id="endDate" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text border-left-0 bg-white" id="basic-addon1">
+                      <img src="../images/schedule/calendar.svg" width="20" alt="calendar">
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Shape</label>
+                <div class="w-100">
+                  <label class="customColorSel medicineType medicine-shape1">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customColorSel medicineType medicine-shape2">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customColorSel medicineType medicine-shape3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customColorSel medicineType medicine-shape4">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customColorSel medicineType medicine-shape5">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Color</label>
+                <div class="w-100">
+                  <label class="customColorSel">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customColorSel cyanColor">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customColorSel lightGreenColor">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customColorSel lightCreamColor">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Add Notes</label>
+                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="reset" class="btn btn-link">Cancel</button>
+              <button type="submit" class="btn btn-primary">Add Medication</button>
+            </form>
           </div>
         </div>
       </div>
