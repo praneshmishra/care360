@@ -40,6 +40,50 @@
     background: #ffffff url(../images//Diagnostics/view-tab.svg) no-repeat 10px 10px;
     background-size: 20px;
 }
+
+.diagnostics-view {
+    background-color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#toggleView {
+	margin: 30px;
+}
+
+#toggleView .btn-group {
+	height: 40px;
+	border: 1px solid #0051bf;	
+	border-top: 0;	
+}
+
+#toggleView .btn-group label {
+	color: #363c3f;
+	background-color: #ffffff;
+	width: 120px;
+	border: 0;
+    border-radius: 0;
+}
+
+#toggleView .btn-group label.active {
+	background-color: #0051bf;
+	color: #ffffff;
+}
+
+#toggleView .btn-group label:focus {
+    outline: 0;
+    background-color: #0051bf;
+    box-shadow: none;
+}
+
+#toggleView .btn-group label.focus {
+    box-shadow: none;
+}
+
+#gridContent {
+	display: none;
+}
 /* Diagnostics Schedule */
 .ui-helper-hidden {
 	display: block;
