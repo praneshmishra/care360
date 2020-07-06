@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    $('#gridTable').DataTable({
+    $('.view-vitals #gridTableVitals').DataTable({
         "paging":   false,
         "info":     false,
         "searching": false
     });
-    $('#graphTable').DataTable({
+    $('.view-vitals #graphTableVitals').DataTable({
         "paging":   false,
         "info":     false,
         "searching": false
@@ -30,5 +30,3 @@ $(document).on('click','#toggleView input', function() {
         $("#toggleView .btn-group label.v-grid").removeClass("active");
     }
 });
-
-//$("#datepicker").datepicker();

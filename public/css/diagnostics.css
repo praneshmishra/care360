@@ -40,6 +40,109 @@
     background: #ffffff url(../images//Diagnostics/view-tab.svg) no-repeat 10px 10px;
     background-size: 20px;
 }
+
+.view-diagnostics {
+    background-color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.view-calendar {
+	margin: 10px;
+}
+
+.view-calendar input#datepicker {
+	padding: 10px;
+    margin: 10px 0 0;
+	width: 100%;
+	border: 1px solid #efefef;
+	background: url(../images/Diagnostics/calendar.svg) no-repeat 95% 10px;
+    background-size: 25px;
+}
+
+#toggleView {
+	margin: 30px;
+}
+
+#toggleView .btn-group {
+	height: 40px;
+	border: 1px solid #0051bf;	
+	border-top: 0;	
+}
+
+#toggleView .btn-group label {
+	color: #363c3f;
+	background-color: #ffffff;
+	width: 120px;
+	border: 0;
+	border-radius: 0;
+	font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#toggleView .btn-group label.active {
+	background-color: #0051bf;
+	color: #ffffff;
+}
+
+#toggleView .btn-group label:focus {
+    outline: 0;
+    background-color: #0051bf;
+    box-shadow: none;
+}
+
+#toggleView .btn-group label.focus {
+    box-shadow: none;
+}
+
+#gridContent {
+	display: none;
+}
+
+#gridTable, #graphTable {
+	border: none;
+}
+
+#graphTable thead th, #gridTable thead th {
+	border-bottom: 1px solid #ffffff;
+}
+
+#graphTable tbody tr, #gridTable tbody tr {
+	height: 20px;
+}
+
+#graphTable th, #graphTable td, #gridTable th, #gridTable td {
+	font-family: 'Roboto';
+    font-size: 10px;
+    font-weight: 500;
+    color: #363c3f;
+}
+
+#graphTable.table-striped tbody tr:nth-of-type(odd) {
+	background-color: #ffffff;
+}
+
+#graphTable.table-striped tbody tr:nth-of-type(even) {
+	background-color: #efefef;
+}
+
+#graphTable.dataTable thead .sorting_asc, #gridTable.dataTable thead .sorting_asc {
+	background: url(../images/Diagnostics/up-arrow.svg) no-repeat 95% 15px;
+    background-size: 10px;
+}
+
+#graphTable.dataTable thead .sorting_desc, #gridTable.dataTable thead .sorting_desc {
+	background: url(../images/Diagnostics/down-arrow.svg) no-repeat 95% 15px;
+    background-size: 10px;
+}
+
+#graphTable.dataTable thead .sorting, #gridTable.dataTable thead .sorting {
+	background: url(../images/Diagnostics/up-and-down.svg) no-repeat 95% 12px;
+    background-size: 10px;
+}
+
 /* Diagnostics Schedule */
 .ui-helper-hidden {
 	display: block;
