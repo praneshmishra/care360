@@ -27,3 +27,26 @@
 .display-block {
     display: block;
 }
+
+.survey-btn-group {
+    width: 100%;
+}
+
+.survey-btn-group .btn {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.survey-btn-group .btn-cancel {
+    padding-left: 0;
+    width: 25%;
+    text-align: left;
+    color: #0051BF;
+}
+
+.survey-btn-group .btn-next {
+    background-color: #0051BF;
+    border-radius: 0;
+    width: 75%;
+}
