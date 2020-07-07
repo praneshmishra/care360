@@ -1,9 +1,9 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $("main").load("/html/cards.html");
     $("#breadcrumbs").hide();
     populateUserName();
 
-    $(document).on('click','.link-diagnostic',function(){
+    $(document).on('click', '.link-diagnostic', function () {
         $("main").load("/html/diagnostics.html");
         $("#breadcrumbs").show();
         $(".link-bc-last").hide();
@@ -12,7 +12,7 @@ $(document).ready(function(){
         $(".link-bc-secondary").addClass("active");
     });
 
-    $(document).on('click','.link-survey',function(){
+    $(document).on('click', '.link-survey', function () {
         $("main").load("/html/survey.html");
         $("#breadcrumbs").show();
         $(".link-bc-last").hide();
@@ -21,7 +21,7 @@ $(document).ready(function(){
         $(".link-bc-secondary").addClass("active");
     });
 
-    $(document).on('click','.medication-schedule, #toggelSchMed .schedule',function(){
+    $(document).on('click', '.medication-schedule, #toggelSchMed .schedule', function () {
         $("main").load("/html/medication-schedule.html");
         $("#breadcrumbs").show();
         $(".link-bc-secondary").show();
@@ -32,7 +32,7 @@ $(document).ready(function(){
         $(".link-bc-last").addClass("active");
     });
 
-    $(document).on('click','.my-medication-link, #toggelSchMed .medication',function(){
+    $(document).on('click', '.my-medication-link, #toggelSchMed .medication', function () {
         $("main").load("/html/my-medications.html");
         $("#breadcrumbs").show();
         $(".link-bc-secondary").show();
@@ -43,7 +43,7 @@ $(document).ready(function(){
         $(".link-bc-last").addClass("active");
     });
 
-    $(document).on('click','.diagnostics-schedule, #toggleDiagnostics .d-schedule',function(){
+    $(document).on('click', '.diagnostics-schedule, #toggleDiagnostics .d-schedule', function () {
         $("main").load("/html/diagnostics_schedule.html");
         $("#breadcrumbs").show();
         $(".link-bc-secondary").show();
@@ -54,7 +54,7 @@ $(document).ready(function(){
         $(".link-bc-last").addClass("active");
     });
 
-    $(document).on('click','.diagnostics-view, #toggleDiagnostics .d-view',function(){
+    $(document).on('click', '.diagnostics-view, #toggleDiagnostics .d-view', function () {
         $("main").load("/html/diagnostics_view.html");
         $("#breadcrumbs").show();
         $(".link-bc-secondary").show();
@@ -65,7 +65,7 @@ $(document).ready(function(){
         $(".link-bc-last").addClass("active");
     });
 
-    $(document).on('click','.diagnostics-result, #toggleDiagnostics .d-results',function(){
+    $(document).on('click', '.diagnostics-result, #toggleDiagnostics .d-results', function () {
         $("main").load("/html/diagnostics_result.html");
         $("#breadcrumbs").show();
         $(".link-bc-secondary").show();
@@ -76,7 +76,7 @@ $(document).ready(function(){
         $(".link-bc-last").addClass("active");
     });
 
-    $(document).on('click','.link-vitals, #toggleVitals .v-vitals',function(){
+    $(document).on('click', '.link-vitals, #toggleVitals .v-vitals', function () {
         $("main").load("/html/vitals.html");
         $("#breadcrumbs").show();
         $(".link-bc-secondary").show();
@@ -87,7 +87,20 @@ $(document).ready(function(){
         $(".link-bc-last").addClass("active");
     });
 
-    $(document).on('click','#toggleVitals .v-ancillary',function(){
+    $(document).on('click', '.diabetes-link', function () {
+        $("main").load("/html/survey-diabetes.html");
+        $("#breadcrumbs").show();
+        $(".link-bc-secondary").show();
+        $(".link-bc-secondary").html('<a href="javascript:void(0)" class="link-survey">Survey</a>');
+        $(".link-bc-secondary").removeClass("active");
+        $(".link-bc-last").show();
+        $(".link-bc-last").text("Diabetes Management Survey");
+        $(".link-bc-last").addClass("active");
+    });
+
+
+
+    $(document).on('click', '#toggleVitals .v-ancillary', function () {
         $("main").load("/html/vitals-ancillary.html");
         $("#breadcrumbs").show();
         $(".link-bc-secondary").show();
@@ -98,7 +111,7 @@ $(document).ready(function(){
         $(".link-bc-last").addClass("active");
     });
 
-    $(document).on('click','#toggleVitals .v-view',function(){
+    $(document).on('click', '#toggleVitals .v-view', function () {
         $("main").load("/html/vitals-view.html");
         $("#breadcrumbs").show();
         $(".link-bc-secondary").show();
@@ -109,12 +122,12 @@ $(document).ready(function(){
         $(".link-bc-last").addClass("active");
     });
 
-    $(document).on('click','.link-home',function(){
+    $(document).on('click', '.link-home', function () {
         $("#breadcrumbs").hide();
         $("main").load("/html/cards.html");
     });
 
-    $(".showCardContent").click(function(){
+    $(".showCardContent").click(function () {
         $(this).toggleClass("mb-0");
         $(this).next(".cardContent").slideToggle();
     })
@@ -134,7 +147,7 @@ function populateUserName() {
         }
     }
     $(".user-name").text(fullname);
-    if(email !== undefined && email !== "" && email.includes("@")) {
+    if (email !== undefined && email !== "" && email.includes("@")) {
         $(".user-email").text(email);
     } else {
         $(".user-email").text("john.doe@example.com");

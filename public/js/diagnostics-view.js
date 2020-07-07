@@ -1,10 +1,12 @@
 $(document).ready(function() {
     $('#gridTable').DataTable({
+        "retrieve": true,
         "paging":   false,
         "info":     false,
         "searching": false
     });
     $('#graphTable').DataTable({
+        "retrieve": true,
         "paging":   false,
         "info":     false,
         "searching": false

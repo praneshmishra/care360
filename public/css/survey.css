@@ -1,0 +1,26 @@
+.survey-card-img-top {
+    max-width: 35px;
+    max-height: 35px;
+    margin: 10px;
+}
+
+.survey-col-sm-4 {
+    background-color: #fff;
+    display: flex;
+    border: 1px solid #ffffff;
+    padding: 5px;
+}
+
+.survey-col-sm-4 h4 {
+    color: #0051bf; 
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.survey-col-sm-4 p {
+    color: #363c3f; 
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+}
+

@@ -1,10 +1,12 @@
 $(document).ready(function() {
     $('.view-vitals #gridTableVitals').DataTable({
+        "retrieve": true,
         "paging":   false,
         "info":     false,
         "searching": false
     });
     $('.view-vitals #graphTableVitals').DataTable({
+        "retrieve": true,
         "paging":   false,
         "info":     false,
         "searching": false
