@@ -50,3 +50,12 @@
     border-radius: 0;
     width: 75%;
 }
+
+.survey-q-2 {
+    display: none;
+}
+
+.progress-width-0 {
+    width: 100% !important;
+    background-color: #e9ecef;
+}
