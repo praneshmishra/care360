@@ -1,3 +1,7 @@
+.ancillary-accordion {
+    margin-bottom: 60px;
+}
+
 .ancillary-accordion .card {
 	margin-top: 10px;
 	border-radius: 0;
@@ -242,6 +246,11 @@
     font-size: 12px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
+}
+
+.symptoms-form .date-time-picker .input-group-text {
+    padding-bottom: 5px;
+    padding-right: 5px;
 }
 
 .pain-scale .pain-scale-bar {
