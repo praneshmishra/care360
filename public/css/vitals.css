@@ -103,6 +103,10 @@
     background-size: 20px;
 }
 /* vitals page styles */
+.Vitals-form-container {
+    margin-bottom: 60px;
+}
+
 .vitals-form-group img {
     height: 30px;
     width: 30px;

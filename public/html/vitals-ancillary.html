@@ -1,7 +1,95 @@
-<div class="container">
-    <div class="row">
+<div class="ancillary-accordion" id="ancillaryAccordion">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <img class="parameter-icon" src="/images/vitals/parameter.svg" width="30" alt="parameter icon">
+                    Parameters
+                </button>
+            </h5>
+        </div>
 
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#ancillaryAccordion">
+            <div class="card-body">
+                <form class="parameters-form">
+                    <div class="form-group">
+                        <label for="bloodSugar"><img class="blood-sugar-icon" src="/images/vitals/blood-sugar.svg"
+                                alt="blood sugar icon">Blood Sugar</label>
+                        <input type="text" class="form-control" id="bloodSugar" name="blood sugar">
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-link btn-clear">Clear</button>
+                        <button type="button" class="btn btn-primary btn-save">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <img class="symptoms-icon" src="/images/vitals/symptoms.svg" width="30" alt="symptoms icon">
+                    Symptoms
+                </button>
+            </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#ancillaryAccordion">
+            <div class="card-body">
+                <div class="symptoms-form-check">
+                    <label class="checbox-container">Nausea
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checbox-container">Congestion
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checbox-container">Pain
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="pain-scale mt-2 mb-3">
+                    <h6 class="scale-title mb-0">How bad is your pain?</h6>
+                    <span class="scale-text">Scale from 0-10</span>
+                    <div class="pain-scale-container mt-2">
+                        <div class="pain-scale-bar"></div>
+                    </div>
+                </div>
+                <form class="symptoms-form">
+                    <div class="form-group date-time-picker">
+                        <label for="dateTime">Date and Time</label>
+                        <div class="input-group mb-4">
+                            <input type="text" class="form-control rounded-0 border-right-0" id="dateTime"
+                                placeholder="June 21, 2020 4:20pm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text border-left-0 bg-white">
+                                    <img src="/images/vitals/date-time.svg" width="20" alt="date and time picker">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="symptomsNotes" maxlength="500" placeholder="Notes" rows="4"
+                            style="resize: none"></textarea>
+                        <img class="microphone-icon" src="/images/vitals/microphone.svg" width="30"
+                            alt="microphone icon">
+                        <div class="text-right">
+                            <span>Maximum 500 characters</span>
+                        </div>
+                    </div>
+                    <div class="btn-group mt-2" role="group">
+                        <button type="button" class="btn btn-link btn-clear">Clear</button>
+                        <button type="button" class="btn btn-primary btn-save">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 <div class="position-fixed" id="toggleVitals">
