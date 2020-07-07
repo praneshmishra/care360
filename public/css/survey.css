@@ -8,7 +8,7 @@
     background-color: #fff;
     display: flex;
     border: 1px solid #ffffff;
-    padding: 5px;
+    padding: 10px 15px 0;
 }
 
 .survey-col-sm-4 h4 {
@@ -28,8 +28,21 @@
     display: block;
 }
 
+.survey-form-check.form-check {
+    padding: .5rem;
+}
+
+.survey-form-check .form-check-label {
+    margin-left: 10px;
+} 
+
+.form-check:last-child {
+    padding-bottom: 1rem;
+}
+
 .survey-btn-group {
     width: 100%;
+    padding: 20px 0;
 }
 
 .survey-btn-group .btn {
@@ -40,21 +53,41 @@
 
 .survey-btn-group .btn-cancel {
     padding-left: 0;
-    width: 25%;
+    width: 20%;
     text-align: left;
     color: #0051BF;
+    left: -16%;
 }
 
 .survey-btn-group .btn-next {
     background-color: #0051BF;
     border-radius: 0;
-    width: 75%;
+    width: 80%;
+}
+
+.survey-btn-group .btn-back {
+    padding-left: 0;
+    width: 20%;
+    text-align: left;
+    color: #0051BF;
+    left: -16%;
+}
+
+.survey-btn-group .btn-submit {
+    background-color: #0051BF;
+    border-radius: 0;
+    width: 80%;
 }
 
 .survey-q-2 {
     display: none;
 }
 
+.survey-outline {
+    outline: 1px solid #dddddd;
+    outline-offset: -12px;
+    padding: 20px;
+}
 .progress-width-0 {
     width: 100% !important;
     background-color: #e9ecef;
