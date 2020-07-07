@@ -436,7 +436,7 @@ button.ui-button::-moz-focus-inner {
 .ui-datepicker-calendar tbody tr {
     border-bottom: 1px solid #dddddd;
 }
-.ui-datepicker-calendar tbody tr:first-child   {
+.ui-datepicker-calendar tbody tr:first-child td a {
     padding-top: 1.9em;
 }
 .ui-datepicker-calendar thead:after {  
