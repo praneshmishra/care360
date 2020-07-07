@@ -1,0 +1,256 @@
+.ancillary-accordion .card {
+	margin-top: 10px;
+	border-radius: 0;
+}
+
+.ancillary-accordion .card .card-header {
+	border: 0;
+	background-color: #ffffff;
+}
+
+.ancillary-accordion .card .card-header,
+.ancillary-accordion .card .card-header h5 {
+	padding: 0;
+}
+
+.ancillary-accordion .card-body {
+	padding-top: 10px;
+}
+
+.ancillary-accordion .card-header button {
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #0051BF;
+	text-decoration: none;
+	border: 0;
+	padding: .75rem 1.25rem;
+	width: 100%;
+	text-align: left;
+	background: #ffffff url(../images/vitals/accordian-expand.svg) no-repeat 95% 25px;
+	background-size: 20px;
+}
+
+.ancillary-accordion .card-header button.collapsed {
+	background: #ffffff url(../images/vitals/accordian-collapse.svg) no-repeat 95% 25px;
+	background-size: 20px;
+}
+
+.ancillary-accordion .card-header button:focus {
+	box-shadow: none;
+}
+
+.ancillary-accordion .card-header button.btn-link img {
+	margin-right: 5px;
+}
+
+
+/* parameters form styles */
+
+.parameters-form .form-group img {
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+}
+
+.parameters-form .form-group label {
+	margin-bottom: 10px;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+.parameters-form .form-group .form-control {
+	width: 60%;
+	border: 1px solid #B8B8B8;
+}
+
+.parameters-form .btn {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+.parameters-form .btn-group {
+	width: 100%;
+}
+
+.parameters-form .btn-clear {
+	padding-left: 0;
+	width: 25%;
+	text-align: left;
+	color: #0051BF;
+}
+
+.parameters-form .btn-save {
+	background-color: #0051BF;
+	border-radius: 0;
+	width: 75%;
+}
+
+.symptoms-form-check {
+	padding-left: 3px;
+}
+
+
+/* The container */
+
+.checbox-container {
+	display: block;
+	position: relative;
+	padding-left: 38px;
+	margin-bottom: 16px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #535E63;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.checbox-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+    background-color: #ffffff;
+    border: 1px solid #B0B0B0;
+    border-radius: .2rem;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.checbox-container input:checked~.checkmark {
+    background-color: #0051BF;
+    border: 1px solid #0051BF;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.checbox-container input:checked~.checkmark:after {
+	display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.checbox-container .checkmark:after {
+	left: 9px;
+	top: -2px;
+	width: 11px;
+	height: 20px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(42deg);
+	-ms-transform: rotate(42deg);
+	transform: rotate(42deg);
+}
+
+.pain-scale {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #535E63;
+}
+
+.pain-scale .scale-text {
+    font-size: 13px;
+}
+
+.symptoms-form {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #535E63;
+}
+
+.symptoms-form textarea.form-control {
+    font-size: 13px;
+}
+
+.symptoms-form div.text-right span {
+    font-size: 12px;
+}
+
+.symptoms-form .microphone-icon {
+    position: absolute;
+    right: 25px;
+    bottom: 112px;
+    height: 20px;
+    width: 20px;
+}
+
+.symptoms-form .btn {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+.symptoms-form .btn-group {
+	width: 100%;
+}
+
+.symptoms-form .btn-clear {
+	padding-left: 0;
+	width: 25%;
+	text-align: left;
+	color: #0051BF;
+}
+
+.symptoms-form .btn-save {
+	background-color: #0051BF;
+	border-radius: 0;
+	width: 75%;
+}
+
+.symptoms-form .date-time-picker label {
+    font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.symptoms-form .date-time-picker #dateTime {
+    font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+.pain-scale .pain-scale-bar {
+    width: 100%;
+}
+
+.pain-scale .pain-scale-container {
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+    background-color: #535E63;
+}
