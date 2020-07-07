@@ -436,9 +436,16 @@ button.ui-button::-moz-focus-inner {
 .ui-datepicker-calendar tbody tr {
     border-bottom: 1px solid #dddddd;
 }
-/* .ui-datepicker-calendar thead tr {
+.ui-datepicker-calendar tbody tr:first-child   {
+    padding-top: 1.9em;
+}
+.ui-datepicker-calendar thead:after {  
+	content : "";
+	position: absolute;
+	left    : 0;
+	width   : 100%; 
     border-bottom: 10px solid #dddddd;
-} */
+}
 .ui-datepicker .ui-datepicker-header {
 	position: relative;
 }
@@ -483,7 +490,7 @@ button.ui-button::-moz-focus-inner {
 	margin: 0 0 2em 1.7em;
 }
 .ui-datepicker th {
-	padding: 0 0.3em 1.3em 0.3em;
+	padding: 0 0.3em 0.7em 0.3em;
 	text-align: center;
 	font-weight: 400;
 	border: 0;
