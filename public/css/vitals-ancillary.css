@@ -352,6 +352,10 @@
     height: 8px;
 }
 
+.pain-scale-bar .wrapper:first-child .rating-number {
+   border-left: 1px solid #7E878B; 
+}
+
 .pain-scale-bar .wrapper .rating-number > span {
     font-size: 12px;
 	font-family: 'Roboto', sans-serif;
