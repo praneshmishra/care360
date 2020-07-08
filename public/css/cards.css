@@ -26,6 +26,9 @@ body{
     font-family: 'Roboto';
     font-weight: 500;
 }
+.result-col-sm-4.col-sm-4 p {
+    margin: 0 0 -15px 0;
+}
 
 .custom-col-sm-4.col-sm-4 a {
     font-size: 13px;
@@ -61,6 +64,12 @@ body{
 }
 
 .custom-card-img-top.card-img-top {
+    max-width: 50px;
+    max-height: 50px;
+    margin: auto 15px;
+}
+
+.result-card-img-top.card-img-top {
     max-width: 50px;
     max-height: 50px;
     margin: auto 15px;
