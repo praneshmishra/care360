@@ -92,3 +92,9 @@
     width: 100% !important;
     background-color: #e9ecef;
 }
+
+.status-text {
+    color: #8e8e8e !important;
+    font-size:12px !important;
+    margin-bottom: 0;
+}

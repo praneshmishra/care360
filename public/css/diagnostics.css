@@ -54,20 +54,22 @@
 
 .view-calendar input#datepicker {
 	padding: 10px;
-    margin: 10px 0 0;
+    margin: 20px 0 0;
 	width: 100%;
 	border: 1px solid #efefef;
 	background: url(../images/Diagnostics/calendar.svg) no-repeat 95% 10px;
-    background-size: 25px;
+	background-size: 25px;
+	font-size: 13px;
+    font-family: "Roboto";
 }
 
 #toggleView {
-	margin: 30px;
+	margin: 10px 30px 20px;
 }
 
 #toggleView .btn-group {
 	height: 40px;
-	border: 1px solid #0051bf;	
+	border: 0;	
 	border-top: 0;	
 }
 
@@ -75,7 +77,7 @@
 	color: #363c3f;
 	background-color: #ffffff;
 	width: 120px;
-	border: 0;
+	border: 1px solid #0051bf;
 	border-radius: 0;
 	font-family: 'Roboto';
     font-size: 16px;
@@ -110,12 +112,12 @@
 }
 
 #graphTable tbody tr, #gridTable tbody tr {
-	height: 20px;
+	height: 30px;
 }
 
 #graphTable th, #graphTable td, #gridTable th, #gridTable td {
 	font-family: 'Roboto';
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 500;
     color: #363c3f;
 }
@@ -129,18 +131,18 @@
 }
 
 #graphTable.dataTable thead .sorting_asc, #gridTable.dataTable thead .sorting_asc {
-	background: url(../images/Diagnostics/up-arrow.svg) no-repeat 95% 15px;
+	background: url(../images/Diagnostics/up-arrow.svg) no-repeat 95% 17px;
     background-size: 10px;
 }
 
 #graphTable.dataTable thead .sorting_desc, #gridTable.dataTable thead .sorting_desc {
-	background: url(../images/Diagnostics/down-arrow.svg) no-repeat 95% 15px;
+	background: url(../images/Diagnostics/down-arrow.svg) no-repeat 95% 17px;
     background-size: 10px;
 }
 
 #graphTable.dataTable thead .sorting, #gridTable.dataTable thead .sorting {
-	background: url(../images/Diagnostics/up-and-down.svg) no-repeat 95% 12px;
-    background-size: 10px;
+	background: url(../images/Diagnostics/up-and-down.svg) no-repeat 95% 13px;
+    background-size: 14px;
 }
 
 /* Diagnostics Schedule */
