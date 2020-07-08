@@ -257,9 +257,91 @@
     width: 100%;
 }
 
-.pain-scale .pain-scale-container {
+/* .pain-scale .pain-scale-container {
     border-radius: 10px;
     height: 10px;
     overflow: hidden;
     background-color: #535E63;
+} */
+
+.pain-scale-bar .wrapper {
+    width: calc(100% / 10);
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.pain-scale-bar .wrapper .gradient {
+    height: 10px;
+}
+
+.pain-scale-bar .gradient-1 {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.pain-scale-bar .gradient-10 {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #202020;
+    border: 1px solid #202020;
+}
+
+.pain-scale-bar .gradient-9 {
+    background: #2D2D2D;
+    border: 1px solid #2D2D2D;
+}
+.pain-scale-bar .gradient-8 {
+    background: #4B4B4B;
+    border: 1px solid #4B4B4B;
+}
+.pain-scale-bar .gradient-7 {
+    background: #595959;
+    border: 1px solid #595959;
+}
+.pain-scale-bar .gradient-6 {
+    background: #767676;
+    border: 1px solid #767676;
+}
+.pain-scale-bar .gradient-5 {
+    background: #858585;
+    border: 1px solid #858585;
+}
+.pain-scale-bar .gradient-4 {
+    background: #B1B1B1;
+    border: 1px solid #B1B1B1;
+}
+.pain-scale-bar .gradient-3 {
+    background: #BFBFBF;
+    border: 1px solid #BFBFBF;
+}
+.pain-scale-bar .gradient-2 {
+    background: #CECECE;
+    border: 1px solid #CECECE;
+}
+.pain-scale-bar .gradient-1 {
+    background: #DCDCDC;
+    border: 1px solid #DCDCDC;
+}
+.pain-scale-bar .wrapper .emoji-container {
+    height: 30px;
+}
+
+.pain-scale-bar .wrapper img {
+    position: absolute;
+}
+
+.pain-scale-bar .wrapper .smile-1-icon,
+.pain-scale-bar .wrapper .smile-2-icon,
+.pain-scale-bar .wrapper .smile-3-icon,
+.pain-scale-bar .wrapper .smile-4-icon {
+    margin-left: 5px;
+}
+
+.pain-scale-bar .wrapper .smile-5-icon {
+    margin-left: -10px;
+}
+
+.pain-scale-bar .wrapper .smile-6-icon {
+    margin-left: 2px;
 }
