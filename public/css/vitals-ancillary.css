@@ -372,3 +372,9 @@
     color: #ffffff;
     font-size: 10px;
 }
+
+button:focus {
+    box-shadow: none!important;
+    outline: 0!important;
+    text-decoration: none!important;
+}
