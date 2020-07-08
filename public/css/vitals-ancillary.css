@@ -324,7 +324,7 @@
     border: 1px solid #DCDCDC;
 }
 .pain-scale-bar .wrapper .emoji-container {
-    height: 30px;
+    height: 25px;
 }
 
 .pain-scale-bar .wrapper img {
@@ -344,4 +344,27 @@
 
 .pain-scale-bar .wrapper .smile-6-icon {
     margin-left: 2px;
+}
+
+.pain-scale-bar .wrapper .rating-number {
+    border-top: 1px solid #E3E5E6;
+    border-right: 1px solid #7E878B;
+    height: 8px;
+}
+
+.pain-scale-bar .wrapper .rating-number > span {
+    font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.pain-scale-bar .wrapper .rating-number > span.selected {
+    background: #4B4B4B;
+    border-radius: 50%;
+    height: 15px;
+    width: 14px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
 }
