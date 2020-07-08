@@ -112,3 +112,48 @@
     font-size:12px !important;
     margin-bottom: 0;
 }
+
+.radio-item {
+    display: block;
+    position: relative;
+    padding: 0 6px;
+    margin: 10px 0 0;
+  }
+  
+  .radio-item input[type='radio'] {
+    display: none;
+  }
+  
+  .radio-item label {
+    color: #666;
+    font-weight: normal;
+  }
+  
+  .radio-item label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    border: 2px solid #0051bf;
+    background-color: transparent;
+  }
+  
+  .radio-item input[type=radio]:checked + label:after {
+    border-radius: 10px;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    content: " ";
+    display: block;
+    background: #ffffff;
+  }
+
+  .radio-item input[type=radio]:checked + label:before {
+    background: #0051bf;
+  }

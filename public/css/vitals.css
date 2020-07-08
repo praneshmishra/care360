@@ -70,7 +70,6 @@
 }
 
 #toggleVitals .btn-group label {
-    width: 50%;
     border: 0;
     border-radius: 0;
     color: #555555;
@@ -91,7 +90,7 @@
 }
 
 #toggleVitals .btn-group label.v-vitals {
-    background: #ffffff url(../images/vitals/vital-tab.svg) no-repeat 5px 8px;
+    background: #ffffff url(../images/vitals/vital-tab.svg) no-repeat 12px 8px;
     background-size: 20px;
 }
 

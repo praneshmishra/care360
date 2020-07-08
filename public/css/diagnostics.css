@@ -6,7 +6,6 @@
 }
 
 #toggleDiagnostics .btn-group label {
-    width: 50%;
     border: 0;
     border-radius: 0;
     color: #555555;
@@ -27,7 +26,7 @@
 }
 
 #toggleDiagnostics .btn-group label.d-schedule {
-    background: #ffffff url(../images/Diagnostics/schedule-tab.svg) no-repeat 5px 8px;
+    background: #ffffff url(../images/Diagnostics/schedule-tab.svg) no-repeat 12px 8px;
     background-size: 20px;
 }
 
@@ -77,7 +76,7 @@
 	color: #363c3f;
 	background-color: #ffffff;
 	width: 120px;
-	border: 0;
+	border: 1px solid #0051bf;
 	border-radius: 0;
 	font-family: 'Roboto';
     font-size: 16px;

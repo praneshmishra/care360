@@ -5,6 +5,28 @@ body{
     background-color: #dddddd !important;
 }
 
+.survey-image {
+    margin: auto 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.survey-image img {
+    margin: 0 !important;
+}
+
+.survey-count {
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    background-color: #0051bf;
+    color: white;
+    font-size: 12px;
+    font-family: "Roboto";
+}
+
 .custom-col-sm-4.col-sm-4 {
     background-color: #fff;
     display: flex;
