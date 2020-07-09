@@ -404,6 +404,7 @@ svg #main-circ {
     border-top: 0;
     background-color: #ffffff;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .cardContent .card-body {
@@ -498,8 +499,8 @@ svg #main-circ {
 }
 
 .cardContent .med-alert-info .action span p {
-    font-size: 13px;
-    margin: 5px 0 0 7px
+    font-size: 12px;
+    margin: 5px 0 0 5px
 }
 
 .cardContent .card-body .action span.alert-me, 
