@@ -48,11 +48,6 @@ $( document ).ready(function() {
         })
     });
 
- /*   $(document).on('click','.showCardContent',function(){
-        $(this).toggleClass("mb-0");
-        $(this).next(".cardContent").slideToggle();
-    }); */
-
     $(document).on('click','.toggelSchMed input',function(){
         if($(this).data().val === "medication") {
             $("#scheduleWrap").fadeOut("fast");

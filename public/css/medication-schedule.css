@@ -85,7 +85,7 @@
     font-weight: 500;
     text-decoration: none;
     border: 0;
-    padding: .75rem 1.25rem;
+    padding: .5rem .75rem;
     width: 100%;
     text-align: left;
     background: #ffffff url(../images/schedule/accordian-expand.svg) no-repeat 95% 20px;
@@ -95,6 +95,14 @@
 .schAccordion .card-header button.collapsed {
     background: #ffffff url(../images/schedule/accordian-collapse.svg) no-repeat 95% 20px;
     background-size: 20px;
+}
+
+#scheduleAccordion .schAccordion .card-header button[aria-expanded="true"] {
+    padding-bottom: 0;
+}
+
+.schAccordion .card-header + div.collapse {
+    padding-bottom: 15px;
 }
 
 /* .schAccordion .card-header button::after {
@@ -113,7 +121,7 @@
     border: 1px solid #cccccc;
     border-radius: 3px;
     margin: 0 -8px;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
 .schAccordion .card-body .icon {
@@ -254,13 +262,12 @@
 }
 
 #toggelSchMed .btn-group label.medication {
-    background: #ffffff url(../images/schedule/bottom-tab-myMedication.svg) no-repeat 25px 10px;
+    background: #ffffff url(../images/schedule/bottom-tab-myMedication.svg) no-repeat 14px 10px;
     background-size: 20px;
 }
 
 form.add-medication {
     width: 100%;
-    margin-bottom: 30px;
 }
 
 form.add-medication .form-control {
@@ -299,6 +306,7 @@ form.add-medication .form-control {
     width: 25px;
     background-color: rgb(210, 230, 255);
     border-radius: 3px;
+    border: 0;
 }
 
 /* On mouse-over, add a color background color */
@@ -391,6 +399,7 @@ form.add-medication .form-control {
     background-position: 5px;
     width: 40px;
     height: 40px;
+    border: 0;
 }
 
 .customColorSel.medicineType.medicine-shape1 {
