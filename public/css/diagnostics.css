@@ -6,7 +6,6 @@
 }
 
 #toggleDiagnostics .btn-group label {
-    width: 50%;
     border: 0;
     border-radius: 0;
     color: #555555;
@@ -27,7 +26,7 @@
 }
 
 #toggleDiagnostics .btn-group label.d-schedule {
-    background: #ffffff url(../images/Diagnostics/schedule-tab.svg) no-repeat 5px 8px;
+    background: #ffffff url(../images/Diagnostics/schedule-tab.svg) no-repeat 12px 8px;
     background-size: 20px;
 }
 
@@ -54,11 +53,13 @@
 
 .view-calendar input#datepicker {
 	padding: 10px;
-    margin: 10px 0 0;
+    margin: 20px 0 0;
 	width: 100%;
 	border: 1px solid #efefef;
 	background: url(../images/Diagnostics/calendar.svg) no-repeat 95% 10px;
-    background-size: 25px;
+    background-size: 25px;	
+	font-size: 13px;	
+    font-family: "Roboto";
 }
 
 #toggleView {
@@ -67,7 +68,7 @@
 
 #toggleView .btn-group {
 	height: 40px;
-	border: 1px solid #0051bf;	
+	border: 0;	
 	border-top: 0;	
 }
 
@@ -75,7 +76,7 @@
 	color: #363c3f;
 	background-color: #ffffff;
 	width: 120px;
-	border: 0;
+	border: 1px solid #0051bf;
 	border-radius: 0;
 	font-family: 'Roboto';
     font-size: 16px;
@@ -110,12 +111,12 @@
 }
 
 #graphTable tbody tr, #gridTable tbody tr {
-	height: 20px;
+	height: 30px;
 }
 
 #graphTable th, #graphTable td, #gridTable th, #gridTable td {
 	font-family: 'Roboto';
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 500;
     color: #363c3f;
 }
@@ -129,18 +130,18 @@
 }
 
 #graphTable.dataTable thead .sorting_asc, #gridTable.dataTable thead .sorting_asc {
-	background: url(../images/Diagnostics/up-arrow.svg) no-repeat 95% 15px;
+	background: url(../images/Diagnostics/up-arrow.svg) no-repeat 95% 17px;
     background-size: 10px;
 }
 
 #graphTable.dataTable thead .sorting_desc, #gridTable.dataTable thead .sorting_desc {
-	background: url(../images/Diagnostics/down-arrow.svg) no-repeat 95% 15px;
+	background: url(../images/Diagnostics/down-arrow.svg) no-repeat 95% 17px;
     background-size: 10px;
 }
 
 #graphTable.dataTable thead .sorting, #gridTable.dataTable thead .sorting {
-	background: url(../images/Diagnostics/up-and-down.svg) no-repeat 95% 12px;
-    background-size: 10px;
+	background: url(../images/Diagnostics/up-and-down.svg) no-repeat 95% 13px;
+    background-size: 14px;
 }
 
 /* Diagnostics Schedule */
@@ -1045,7 +1046,6 @@ a:visited.ui-button,
 .ui-widget-header .ui-state-focus,
 .ui-button:hover,
 .ui-button:focus {
-	border: 1px solid #cccccc;
 	background: #ededed;
 	font-weight: normal;
 	color: #a5a8af;
@@ -1073,14 +1073,12 @@ a.ui-button:focus {
 a.ui-button:active,
 .ui-button:active,
 .ui-button.ui-state-active:hover {
-	border: 1px solid #003eff;
 	background: #007fff;
 	font-weight: normal;
 	color: #ffffff;
 }
 .ui-icon-background,
 .ui-state-active .ui-icon-background {
-	border: #003eff;
 	background-color: #ffffff;
 }
 .ui-state-active a,
@@ -1093,9 +1091,7 @@ a.ui-button:active,
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-	border: 1px solid #dad55e;
-	background: #fffa90;
-	color: #777620;
+	background: #dddddd;
 }
 .ui-state-checked {
 	border: 1px solid #dad55e;

@@ -21,7 +21,7 @@
     color: #363c3f; 
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .display-block {
@@ -30,6 +30,7 @@
 
 .survey-form-check.form-check {
     padding: .5rem;
+    font-size: 14px;
 }
 
 .survey-form-check .form-check-label {
@@ -46,7 +47,7 @@
 }
 
 .survey-btn-group .btn {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
@@ -56,7 +57,7 @@
     width: 20%;
     text-align: left;
     color: #0051BF;
-    left: -16%;
+    left: -22%;
 }
 
 .survey-btn-group .btn-next {
@@ -70,7 +71,7 @@
     width: 20%;
     text-align: left;
     color: #0051BF;
-    left: -16%;
+    left: -22%;
 }
 
 .survey-btn-group .btn-submit {
@@ -92,3 +93,66 @@
     width: 100% !important;
     background-color: #e9ecef;
 }
+.margin-bottom-5px {
+    margin-bottom: 5px;
+}
+
+.survey-form-check-input {
+    height: 20px;
+    width: 20px;
+    margin-top: 0.1rem;
+}
+
+.survey-radio-label {
+    padding: 15px
+}
+
+.status-text {
+    color: #8e8e8e !important;
+    font-size:12px !important;
+    margin-bottom: 0;
+}
+
+.radio-item {
+    display: block;
+    position: relative;
+    padding: 0 6px;
+    margin: 10px 0 0;
+  }
+  
+  .radio-item input[type='radio'] {
+    display: none;
+  }
+  
+  .radio-item label {
+    color: #666;
+    font-weight: normal;
+  }
+  
+  .radio-item label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid #0051bf;
+    background-color: transparent;
+  }
+  
+  .radio-item input[type=radio]:checked + label:after {
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    content: " ";
+    display: block;
+    background: #ffffff;
+  }
+
+  .radio-item input[type=radio]:checked + label:before {
+    background: #0051bf;
+  }

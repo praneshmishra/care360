@@ -11,11 +11,13 @@
 
 .view-vitals-calendar input#datepicker {
 	padding: 10px;
-    margin: 10px 0 0;
+    margin: 20px 0 0;
 	width: 100%;
 	border: 1px solid #efefef;
 	background: url(../images/Diagnostics/calendar.svg) no-repeat 95% 10px;
     background-size: 25px;
+    font-size: 13px;
+    font-family: "Roboto";
 }
 
 #gridTableVitals, #graphTableVitals {
@@ -27,12 +29,12 @@
 }
 
 #graphTableVitals tbody tr, #gridTableVitals tbody tr {
-	height: 20px;
+	height: 30px;
 }
 
 #graphTableVitals th, #graphTableVitals td, #gridTableVitals th, #gridTableVitals td {
 	font-family: 'Roboto';
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 500;
     color: #363c3f;
 }
@@ -46,18 +48,18 @@
 }
 
 #graphTableVitals.dataTable thead .sorting_asc, #gridTableVitals.dataTable thead .sorting_asc {
-	background: url(../images/Diagnostics/up-arrow.svg) no-repeat 95% 15px;
+	background: url(../images/Diagnostics/up-arrow.svg) no-repeat 95% 17px;
     background-size: 10px;
 }
 
 #graphTableVitals.dataTable thead .sorting_desc, #gridTableVitals.dataTable thead .sorting_desc {
-	background: url(../images/Diagnostics/down-arrow.svg) no-repeat 95% 15px;
+	background: url(../images/Diagnostics/down-arrow.svg) no-repeat 95% 17px;
     background-size: 10px;
 }
 
 #graphTableVitals.dataTable thead .sorting, #gridTableVitals.dataTable thead .sorting {
-	background: url(../images/Diagnostics/up-and-down.svg) no-repeat 95% 12px;
-    background-size: 10px;
+	background: url(../images/Diagnostics/up-and-down.svg) no-repeat 95% 13px;
+    background-size: 14px;
 }
 
 #toggleVitals, 
@@ -68,7 +70,6 @@
 }
 
 #toggleVitals .btn-group label {
-    width: 50%;
     border: 0;
     border-radius: 0;
     color: #555555;
@@ -89,7 +90,7 @@
 }
 
 #toggleVitals .btn-group label.v-vitals {
-    background: #ffffff url(../images/vitals/vital-tab.svg) no-repeat 5px 8px;
+    background: #ffffff url(../images/vitals/vital-tab.svg) no-repeat 12px 8px;
     background-size: 20px;
 }
 
@@ -122,7 +123,7 @@
 }
 
 .vitals-form-group .vitals-form-control {
-    width: 50%;
+    width: 60%;
     border: 1px solid #B8B8B8;
 }
 
@@ -149,4 +150,8 @@
     width: 75%;
 }
 
-
+button:focus {
+    box-shadow: none!important;
+    outline: 0!important;
+    text-decoration: none!important;
+}

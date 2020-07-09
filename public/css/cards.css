@@ -5,11 +5,32 @@ body{
     background-color: #dddddd !important;
 }
 
+.survey-image {
+    margin: auto 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.survey-image img {
+    margin: 0 !important;
+}
+
+.survey-count {
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    background-color: #0051bf;
+    color: white;
+    font-size: 12px;
+    font-family: "Roboto";
+}
+
 .custom-col-sm-4.col-sm-4 {
     background-color: #fff;
-    display: flex;
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #dddddd;
 }
 
@@ -63,16 +84,35 @@ body{
 .custom-card-img-top.card-img-top {
     max-width: 50px;
     max-height: 50px;
-    margin: auto 15px;
+    margin: auto 20px;
+}
+
+.result-card-img-top.card-img-top {
+    max-width: 50px;
+    max-height: 50px;
+    margin: auto 20px;
 }
 
 .card-img-reminder {
-    max-width: 15px;
-    margin: 5px;
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 5px;
+}
+
+.schedule-card-reminder {
+    display: flex;
+}
+.margin-bottom-5px {
+    margin-bottom: 5px;
+}
+
+.diagnostic-view-list li:not(:first-child) {
+    margin-left:24px;
 }
 
 .card-text {
     flex: 1;
+    max-width:220px;
 }
 
 .expand-arrow {
@@ -84,9 +124,10 @@ body{
 }
 /*heart*/
 
-.heartbox {
-    position: relative;
-    float: right;
+.heartbox.heartbox-position {
+    position: absolute;
+    right: 3%;
+    bottom: 0;
 }
 
 .heartbox label {

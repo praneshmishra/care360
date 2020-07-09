@@ -95,8 +95,8 @@ div#other-links a {
 a.logout {
     position: absolute;
     bottom: 0;
-    right: 5px;
-    font-size: 14px;
+    left: -12px;
+    font-size: 13px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
@@ -170,7 +170,7 @@ button.medication-btn i.fa.fa-caret-down, button.diagnostic-btn i.fa.fa-caret-do
 .logout-icon {
     width: 25px;
     height: 25px;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 .user-profile-icon {
