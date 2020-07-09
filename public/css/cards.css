@@ -19,12 +19,14 @@ body{
     position: absolute;
     top: 0px;
     right: -10px;
-    padding: 1px 7px;
+    padding: 2px 8px;
     border-radius: 50%;
     background-color: #0051bf;
     color: white;
     font-size: 12px;
     font-family: "Roboto";
+    width: 22px;
+    height: 22px;
 }
 
 .custom-col-sm-4.col-sm-4 {
