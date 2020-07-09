@@ -85,7 +85,7 @@
     font-weight: 500;
     text-decoration: none;
     border: 0;
-    padding: .5rem .75rem;
+    padding: .5rem .75rem 0;
     width: 100%;
     text-align: left;
     background: #ffffff url(../images/schedule/accordian-expand.svg) no-repeat 95% 20px;
@@ -95,14 +95,15 @@
 .schAccordion .card-header button.collapsed {
     background: #ffffff url(../images/schedule/accordian-collapse.svg) no-repeat 95% 20px;
     background-size: 20px;
-}
-
-#scheduleAccordion .schAccordion .card-header button[aria-expanded="true"] {
-    padding-bottom: 0;
+    padding-bottom: .5rem ;
 }
 
 .schAccordion .card-header + div.collapse {
     padding-bottom: 15px;
+}
+
+#MedicationWrap .schAccordion .card-header button {
+    padding-bottom: .5rem ;
 }
 
 /* .schAccordion .card-header button::after {
@@ -460,4 +461,8 @@ form.add-medication .form-control {
 .customColorSel.medicineType .checkmark:after {
     background-color: transparent;
     border: 0;
+}
+
+form.add-medication button[type="submit"] {
+    border-radius: 0;
 }
