@@ -6,7 +6,7 @@ body{
 }
 
 .survey-image {
-    margin: auto 15px;
+    margin: auto 20px;
     position: relative;
     display: inline-block;
 }
@@ -29,9 +29,9 @@ body{
 
 .custom-col-sm-4.col-sm-4 {
     background-color: #fff;
-    display: flex;
+    display:flex;
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #dddddd;
 }
 
@@ -88,13 +88,13 @@ body{
 .custom-card-img-top.card-img-top {
     max-width: 50px;
     max-height: 50px;
-    margin: auto 15px;
+    margin: auto 20px;
 }
 
 .result-card-img-top.card-img-top {
     max-width: 50px;
     max-height: 50px;
-    margin: auto 15px;
+    margin: auto 20px;
 }
 
 .card-img-reminder {
@@ -104,6 +104,7 @@ body{
 
 .card-text {
     flex: 1;
+    max-width:220px;
 }
 
 .expand-arrow {
@@ -115,9 +116,10 @@ body{
 }
 /*heart*/
 
-.heartbox {
-    position: relative;
-    float: right;
+.heartbox.heartbox-position {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .heartbox label {
