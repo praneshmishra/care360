@@ -48,9 +48,15 @@ $( document ).ready(function() {
         })
     });
 
-    $(document).on('click','.showCardContent',function(){
-        $(this).toggleClass("mb-0");
-        $(this).next(".cardContent").slideToggle();
+    $(document).on('click','.showCardContent',function(){   
+        var self = $(this);
+        $(this).addClass("mb-0", 1, function(){
+            self.next(".cardContent").slideToggle(function(){
+                if(!(self.next(".cardContent").is(":visible"))) {
+                    self.removeClass("mb-0");
+                }
+            });
+        });
     });
 
     $(document).on('click','.toggelSchMed input',function(){
