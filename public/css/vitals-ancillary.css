@@ -272,7 +272,7 @@
 }
 
 .pain-scale-bar .wrapper .gradient {
-    height: 10px;
+    height: 8px;
 }
 
 .pain-scale-bar .gradient-1 {
@@ -347,8 +347,8 @@
 }
 
 .pain-scale-bar .wrapper .rating-number {
-    border-top: 1px solid #E3E5E6;
-    border-right: 1px solid #7E878B;
+    border-top: 1px solid #C8CCCE;
+    border-right: 2px solid #A4ABAE;
     height: 8px;
 }
 
@@ -363,6 +363,22 @@
     cursor: pointer;
 }
 
+.pain-scale-bar .wrapper .rating-number > span.float-left {
+	margin-left: -2px;
+}
+
+.pain-scale-bar .wrapper .rating-number > span.float-left.selected {
+	margin-left: -5px;
+}
+
+.pain-scale-bar .wrapper .rating-number > span.float-right {
+	margin-right: -4px;
+}
+
+.pain-scale-bar .wrapper .rating-number > span.float-right.selected {
+	margin-right: -7px;
+}
+
 .pain-scale-bar .wrapper .rating-number > span.selected {
     background: #4B4B4B;
     border-radius: 50%;
@@ -370,7 +386,7 @@
     width: 14px;
     text-align: center;
     color: #ffffff;
-    font-size: 10px;
+	font-size: 10px;
 }
 
 button:focus {
