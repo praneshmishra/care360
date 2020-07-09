@@ -29,7 +29,6 @@ body{
 
 .custom-col-sm-4.col-sm-4 {
     background-color: #fff;
-    display:flex;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #dddddd;
@@ -118,7 +117,7 @@ body{
 
 .heartbox.heartbox-position {
     position: absolute;
-    right: 0;
+    right: 3%;
     bottom: 0;
 }
 

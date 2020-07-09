@@ -127,10 +127,10 @@ $(document).ready(function () {
         $("main").load("/html/cards.html");
     });
 
-    $(".showCardContent").click(function () {
+    $(document).on('click','.showCardContent',function(){
         $(this).toggleClass("mb-0");
         $(this).next(".cardContent").slideToggle();
-    })
+    });
 
 });
 
