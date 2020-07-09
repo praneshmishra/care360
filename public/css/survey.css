@@ -90,9 +90,11 @@
     padding: 20px;
 }
 .progress-width-0 {
-    width: 100% !important;
+    width: 50% !important;
     background-color: #e9ecef;
+    text-align: right !important;
 }
+
 .margin-bottom-5px {
     margin-bottom: 5px;
 }
@@ -113,10 +115,23 @@
     margin-bottom: 0;
 }
 
+.number-box {
+    width: 25px;
+    height: 25px;
+    border: 1px solid lightblue;
+    background: lightblue;
+    padding: 0 2px;
+    margin: 5px 15px 10px 5px;
+}
+
+.number-box .number-text {
+    color: #363c3f;
+    padding: 5px;
+}
+
 .radio-item {
     display: block;
     position: relative;
-    padding: 0 6px;
     margin: 10px 0 0;
   }
   
@@ -147,7 +162,7 @@
     height: 10px;
     position: absolute;
     top: 10px;
-    left: 11px;
+    left: 5px;
     content: " ";
     display: block;
     background: #ffffff;
