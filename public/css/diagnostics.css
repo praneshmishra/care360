@@ -427,7 +427,7 @@ button.ui-button::-moz-focus-inner {
 	pointer-events: none;
 }
 .ui-datepicker {
-	width: 21em;
+	width: 17em;
 	padding: .2em .2em 0;
 	display: none;
 }
@@ -438,7 +438,7 @@ button.ui-button::-moz-focus-inner {
     border-bottom: 1px solid #dddddd;
 }
 .ui-datepicker-calendar tbody tr:first-child td a {
-    padding-top: 1.9em;
+	margin-top: 1.5em !important;
 }
 .ui-datepicker-calendar thead:after {  
 	content : "";
@@ -458,10 +458,10 @@ button.ui-button::-moz-focus-inner {
 	height: 2.5em;
 }
 .ui-datepicker .ui-datepicker-prev {
-	left: 2px;
+	left: 0;
 }
 .ui-datepicker .ui-datepicker-next {
-	right: -8px;
+	right: -70px;
 }
 .ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span {
@@ -473,9 +473,8 @@ button.ui-button::-moz-focus-inner {
 	margin-top: -8px;
 }
 .ui-datepicker .ui-datepicker-title {
-	margin: 0 2.3em;
+	margin: 0 5.7em;
 	line-height: 1.8em;
-	text-align: center;
 }
 .ui-datepicker .ui-datepicker-title select {
 	font-size: 1em;
@@ -488,7 +487,7 @@ button.ui-button::-moz-focus-inner {
 .ui-datepicker table {
 	font-size: 1em;
 	border-collapse: collapse;
-	margin: 0 0 2em 1.7em;
+	margin: 0 0 2em 1.5em;
 }
 .ui-datepicker th {
 	padding: 0 0.3em 0.7em 0.3em;
@@ -503,7 +502,8 @@ button.ui-button::-moz-focus-inner {
 .ui-datepicker td span,
 .ui-datepicker td a {
 	display: block;
-	padding: 1em 0.7em;
+	padding: .4em;
+    margin: .6em .3em !important;
 	text-align: right;
     text-decoration: none;
 	font-size: 14px !important;
@@ -1075,7 +1075,7 @@ a.ui-button:active,
 .ui-button.ui-state-active:hover {
 	background: #007fff;
 	font-weight: normal;
-	color: #ffffff;
+	color: #ffffff !important;
 }
 .ui-icon-background,
 .ui-state-active .ui-icon-background {
@@ -1092,6 +1092,7 @@ a.ui-button:active,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
 	background: #dddddd;
+	color: #454545 !important;
 }
 .ui-state-checked {
 	border: 1px solid #dad55e;

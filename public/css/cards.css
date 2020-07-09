@@ -35,7 +35,7 @@ body{
 }
 
 .custom-col-sm-4.col-sm-4 h4 {
-    margin: 10px 0;
+    margin: 5px 0;
     color: #0051bf; 
     font-family: 'Roboto';
     font-weight: 500;
@@ -112,7 +112,7 @@ body{
 
 .card-text {
     flex: 1;
-    max-width:220px;
+    max-width:225px;
 }
 
 .expand-arrow {
@@ -126,8 +126,8 @@ body{
 
 .heartbox.heartbox-position {
     position: absolute;
-    right: 3%;
-    bottom: 0;
+    right: 1%;
+    bottom: 1%;
 }
 
 .heartbox label {
