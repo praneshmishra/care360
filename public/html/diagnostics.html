@@ -1,15 +1,19 @@
 <div class="container">
     <div class="row">
-        <div class="custom-col-sm-4 col-sm-4 diagnostics-schedule">
+        <div class="custom-col-sm-4 col-sm-4">
+            <div class="row diagnostics-schedule">
             <img class="custom-card-img-top card-img-top" src="images/Diagnostics/schedule.svg" alt="Card">
             <div class="card-text">
                 <h4>Schedule</h4>
-                <p><img class="card-img-reminder" src="images/Diagnostics/reminder.svg" alt="Card">Reminder for taking
-                    blood test today</p>
+                <div class="schedule-card-reminder"><img class="card-img-reminder" src="images/Diagnostics/reminder.svg" alt="Card">
+                    <p>Reminder for taking
+                    blood test today</p></div>
                 <p>
                     <a href="#">Check calender for diagnostic schedule</a>
                 </p>
-                <div class="heartbox"> <input type="checkbox" class="checkbox" id="checkbox_1" />
+            </div>
+        </div>
+                <div class="heartbox heartbox-position"> <input type="checkbox" class="checkbox" id="checkbox_1" />
                     <label for="checkbox_1"> <svg id="heart-svg" viewBox="467 392 58 57"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
@@ -47,16 +51,17 @@
                                 </g>
                             </g>
                         </svg> </label> </div>
-            </div>
-
         </div>
-        <div class="custom-col-sm-4 col-sm-4 diagnostics-result">
+        <div class="custom-col-sm-4 col-sm-4">
+            <div class="row diagnostics-result">
             <img class="custom-card-img-top card-img-top" src="images/Diagnostics/results.svg" alt="Card">
             <div class="card-text">
                 <h4>Results</h4>
                 <p>Please check your lab results here</p>
                 <p><a href="#">See Diagnostics history</a></p>
-                <div class="heartbox"> <input type="checkbox" class="checkbox" id="checkbox_2" />
+            </div>
+        </div>
+                <div class="heartbox heartbox-position"> <input type="checkbox" class="checkbox" id="checkbox_2" />
                     <label for="checkbox_2"> <svg id="heart-svg" viewBox="467 392 58 57"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
@@ -95,23 +100,29 @@
                             </g>
                         </svg> </label>
                 </div>
-            </div>
         </div>
-        <div class="custom-col-sm-4 col-sm-4 diagnostics-view">
+        <div class="custom-col-sm-4 col-sm-4">
+            <div class="row diagnostics-view">
             <img class="custom-card-img-top card-img-top" src="images/Diagnostics/view.svg" alt="Card">
             <div class="card-text">
                 <h4>View</h4>
                 <p>View your diagnostic history</p>
                 <p>
-                <ul>
-                    <li><img class="card-img-reminder" src="images/Diagnostics/all-selected.svg" alt="Card">LFT Report
+                <ul class="diagnostic-view-list">
+                    <li>
+                        <div class="schedule-card-reminder">
+                            <img class="card-img-reminder" src="images/Diagnostics/all-selected.svg" alt="Card">
+                            LFT Report
+                            </div>
                     </li>
                     <li>Test Date: 27/06/2020</li>
-                    <li>Sample: Lab</li>
+                    <li class="margin-bottom-5px">Sample: Lab</li>
                     <li>Results: Available</li>
                 </ul>
                 </p>
-                <div class="heartbox"> <input type="checkbox" class="checkbox" id="checkbox_3" />
+            </div>
+        </div>
+                <div class="heartbox heartbox-position"> <input type="checkbox" class="checkbox" id="checkbox_3" />
                     <label for="checkbox_3"> <svg id="heart-svg" viewBox="467 392 58 57"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
@@ -150,6 +161,5 @@
                             </g>
                         </svg> </label> </div>
             </div>
-        </div>
     </div>
 </div>
