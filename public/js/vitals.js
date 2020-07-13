@@ -34,7 +34,7 @@ $(document).ready(function () {
             if ($("form.symptoms-form").is(':visible')) {
                 formData.getSymptoms();
             }
-        }, 500);  
+        }, 100);
     });
 
     $("form.vitals-form .btn-save").click(function () {
@@ -91,6 +91,8 @@ var formData = {
 
     setSymptoms: function () {
         var symptomsForm = [];
+        var selectedRatingID = $('.wrapper .rating-number span.selected').attr('id'),
+            selectedRatingVal = $('.wrapper .rating-number span.selected').text();
         // Delete old data from sessionStorage
         sessionStorage.removeItem('symptomsForm');
         $('form.symptoms-form input[type=text]').each(function () {
@@ -102,6 +104,7 @@ var formData = {
         $('form.symptoms-form textarea').each(function () {
             symptomsForm.push({ name: this.name, value: this.value });
         });
+        symptomsForm.push({ name: selectedRatingID, value: selectedRatingVal });
         // Add the array to sessionStorage
         sessionStorage.symptomsForm = JSON.stringify(symptomsForm);
     },
@@ -138,7 +141,12 @@ var formData = {
             for (var i = 0; i < symptomsForm.length; i++) {
                 // Populate the form with what data you have for it
                 $('[name=' + symptomsForm[i].name + ']').val(symptomsForm[i].value);
-                $('[name=' + symptoms[i].name + ']').prop('checked', true);
+                $('[name=' + symptomsForm[i].name + ']').prop('checked', true);
+                $('.wrapper .rating-number span').each(function () {
+                    if ($(this).attr('id') === symptomsForm[i].name) {
+                        $(this).addClass('selected');
+                    }
+                })
             }
         }
     },
