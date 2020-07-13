@@ -220,7 +220,7 @@
     background-size: 100%;
 }
 
-.schAccordion .card-body .action span.delete {
+.schAccordion .card-body .action span.medication-delete {
     background: #ffffff url(../images/schedule/delete.svg) no-repeat;
     background-size: 100%;
 }
