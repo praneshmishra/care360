@@ -3,7 +3,7 @@
     <div class="card">
       <div class="card-header" id="amoHeadingOne">
         <h5 class="mb-0">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOneamo" aria-expanded="true"
+          <button id="medicationList" class="btn btn-link" data-toggle="collapse" data-target="#collapseOneamo" aria-expanded="true"
             aria-controls="collapseOne">
             <img src="../images/schedule/medicine-list.svg" width="35" alt="medication"/>&nbsp;&nbsp;&nbsp;&nbsp;List of All Medications
           </button>
@@ -11,88 +11,13 @@
       </div>
 
       <div id="collapseOneamo" class="collapse show" aria-labelledby="amoHeadingOne" data-parent="#allMedicationOne">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
-            <div class="col-7 col-sm-6 info">
-              <h6>Clopidogrel 75 mg</h6>
-              <p>1 pill, once per day before breakfast</p>
-            </div>
-            <div class="col-4 col-sm-4 action">
-              <div class="align-center">
-                <span class="delete"></span>
-                <span class="edit"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-1 col-sm-2 icon"><span>&#x2687;</span></div>
-            <div class="col-7 col-sm-6 info">
-              <h6>Carvedilol 3.125 mg</h6>
-              <p>1 pill, once per day after noon</p>
-            </div>
-            <div class="col-4 col-sm-4 action">
-              <div class="align-center">
-                <span class="delete"></span>
-                <span class="edit"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
-            <div class="col-7 col-sm-6 info">
-              <h6>Augmentin 875 mg</h6>
-              <p>1 pill, once per day before breakfast</p>
-            </div>
-            <div class="col-4 col-sm-4 action">
-              <div class="align-center">
-                <span class="delete"></span>
-                <span class="edit"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-1 col-sm-2 icon"><span>&#x2687;</span></div>
-            <div class="col-7 col-sm-6 info">
-              <h6>Pantoparzole 40 mg</h6>
-              <p>1 pill, once per day before breakfast</p>
-            </div>
-            <div class="col-4 col-sm-4 action">
-              <div class="align-center">
-                <span class="delete"></span>
-                <span class="edit"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>
-            <div class="col-7 col-sm-6 info">
-              <h6>Metaformin 500 mg</h6>
-              <p>1 pill, once per day before breakfast</p>
-            </div>
-            <div class="col-4 col-sm-4 action">
-              <div class="align-center">
-                <span class="delete"></span>
-                <span class="edit"></span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
     <div class="card">
       <div class="card-header" id="headingTwoamo">
         <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwoamo" aria-expanded="false"
+          <button class="btn btn-link collapsed" id="myMedicationAdd" data-toggle="collapse" data-target="#collapseTwoamo" aria-expanded="false"
             aria-controls="collapseTwo">
             <img src="../images/schedule/add-medication.svg" width="35" alt="medication"/>&nbsp;&nbsp;&nbsp;&nbsp;Add Medication
           </button>
@@ -103,43 +28,42 @@
           <div class="row border-0">
             <form class="add-medication">
               <div class="form-group">
-                <label for="exampleFormControlSelect1">Medication</label>
-                <select class="form-control rounded-0" id="exampleFormControlSelect1">
-                  <option>Select or add new medication using typehead</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                <label for="medicationName">Medication</label>
+                <select class="form-control rounded-0" id="medicationName">
+                  <option value="default">Select or add new medication using typehead</option>
+                  <option>Ranitidine</option>
+                  <option>Clopidogrel</option>
+                  <option>Cefazolin</option>
+                  <option>Daonil</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="exampleFormControlSelect2">Dose</label>
-                <select class="form-control rounded-0" id="exampleFormControlSelect2">
-                  <option>Select Dose</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                <label for="medicationDose">Dose</label>
+                <select class="form-control rounded-0" id="medicationDose">
+                  <option value="default">Select Dose</option>
+                  <option>50 mg</option>
+                  <option>100 mg</option>
+                  <option>250 mg</option>
+                  <option>875 mg</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="exampleFormControlSelect3">Frequency</label>
-                <select class="form-control rounded-0" id="exampleFormControlSelect3">
-                  <option>Select frequency</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                <label for="medicationFrequency">Frequency</label>
+                <select class="form-control rounded-0" id="medicationFrequency">
+                  <option value="default">Select frequency</option>
+                  <option>1/2 pill</option>
+                  <option>1 pill</option>
+                  <option>2 pills</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="exampleInputEmail1">Suggested Times</label>
-                <input type="email" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Optional">
+                <label for="medicationTime">Suggested Times</label>
+                <input type="text" class="form-control rounded-0" id="medicationTime" aria-describedby="medicationTime" placeholder="Optional">
               </div>
               <div class="form-group">
-                <label for="startDate">Start Date</label>
+                <label for="medicationStartDate">Start Date</label>
                 <div class="input-group mb-3"> 
-                  <input type="text" class="form-control rounded-0 border-right-0" id="startDate" placeholder="May 21, 2020" aria-label="Username" aria-describedby="basic-addon1">
+                  <input type="text" class="form-control rounded-0 border-right-0" id="medicationStartDate" placeholder="May 21, 2020" aria-label="Username" aria-describedby="basic-addon1">
                   <div class="input-group-prepend">
                     <span class="input-group-text border-left-0 bg-white" id="basic-addon1">
                       <img src="../images/schedule/calendar.svg" width="20" alt="calendar">
@@ -148,9 +72,9 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="endDate">End Date</label>
+                <label for="medicationEndDate">End Date</label>
                 <div class="input-group mb-3">
-                  <input type="text" class="form-control rounded-0 border-right-0" id="endDate" placeholder="May 21, 2020" aria-label="Username" aria-describedby="basic-addon1">
+                  <input type="text" class="form-control rounded-0 border-right-0" id="medicationEndDate" placeholder="May 21, 2020" aria-label="Username" aria-describedby="basic-addon1">
                   <div class="input-group-prepend">
                     <span class="input-group-text border-left-0 bg-white" id="basic-addon1">
                       <img src="../images/schedule/calendar.svg" width="20" alt="calendar">
@@ -205,12 +129,12 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Add Notes</label>
-                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="medicationNotes">Add Notes</label>
+                <textarea class="form-control rounded-0" id="medicationNotes" rows="3"></textarea>
               </div>
               <div class="row border-0 m-0">
                 <button type="reset" class="btn btn-link col-3 text-left pl-0">Cancel</button>
-                <button type="submit" class="btn btn-primary col-9">Add Medication</button>
+                <button type="button" class="btn btn-primary col-9" id="addMedication">Add Medication</button>
               </div>
             </form>
           </div>
@@ -231,3 +155,6 @@
     </label>
   </div>
 </div>
+
+<script src="js/medication-schedule.js"></script>
+<script src="js/medication.js"></script>
