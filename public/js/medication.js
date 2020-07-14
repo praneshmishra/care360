@@ -111,7 +111,7 @@ function sortJsonByTime(calendarInput) {
             $.each(groupedByTime[key], function (key, value) {
                 var medStartDate = value.startDate;
                 var medEndDate = value.endDate;
-                var calDateFormat = calendarInput.split("-");
+                var calDateFormat = calendarInput !== undefined ? calendarInput.split("-") : '';
                 var calendarDate = calDateFormat[1] + "/" + calDateFormat[0] + "/" + calDateFormat[2];
 
                 medStartDate = new Date(medStartDate);
