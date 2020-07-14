@@ -4,89 +4,89 @@
 			"name": "Ranitidine",
 			"dose": "100 mg",
 			"frequency": "1 pill",
-			"suggestedTime": "once per day before breakfast",
-			"startDate": "",
-			"endDate": "",
+			"suggestedTime": "9 am",
+			"startDate": "05/30/2020",
+			"endDate": "06/01/2020",
 			"shape": "capsule",
 			"color": "red",
-			"notes": ""
-		},
-		{
-			"name": "Clopidogrel",
-			"dose": "75 mg",
-			"frequency": "1 pill",
-			"suggestedTime": "once per day before noon",
-			"startDate": "",
-			"endDate": "",
-			"shape": "sphere",
-			"color": "violet",
-			"notes": ""
+			"notes": "once per day before breakfast"
 		},
 		{
 			"name": "Cefazolin",
 			"dose": "50 mg",
 			"frequency": "1 pill",
-			"suggestedTime": "once per day after breakfast",
-			"startDate": "",
-			"endDate": "",
+			"suggestedTime": "9 am",
+			"startDate": "07/08/2020",
+			"endDate": "07/16/2020",
 			"shape": "oval",
 			"color": "brown",
-			"notes": ""
+			"notes": "once per day before breakfast"
 		},
 		{
 			"name": "Daonil",
 			"dose": "250 mg",
 			"frequency": "1 pill",
-			"suggestedTime": "once per day before breakfast",
-			"startDate": "",
-			"endDate": "",
+			"suggestedTime": "11 am",
+			"startDate": "05/30/2020",
+			"endDate": "08/30/2020",
 			"shape": "capsule",
 			"color": "blue",
-			"notes": ""
+			"notes": "once per day after breakfast"
 		},
 		{
 			"name": "Augmentin",
 			"dose": "875 mg",
 			"frequency": "1 pill",
-			"suggestedTime": "once per day before breakfast",
-			"startDate": "",
-			"endDate": "",
+			"suggestedTime": "11 am",
+			"startDate": "05/30/2020",
+			"endDate": "08/30/2020",
 			"shape": "capsule",
 			"color": "brown",
-			"notes": ""
-		},
-		{
-			"name": "Pantoprazole",
-			"dose": "40 mg",
-			"frequency": "1 pill",
-			"suggestedTime": "once per day before dinner",
-			"startDate": "",
-			"endDate": "sphere",
-			"shape": "violet",
-			"color": "",
-			"notes": ""
-		},
-		{
-			"name": "Metformin",
-			"dose": "500 mg",
-			"frequency": "1 pill",
-			"suggestedTime": "once per day before breakfast",
-			"startDate": "",
-			"endDate": "",
-			"shape": "oval",
-			"color": "green",
-			"notes": ""
+			"notes": "once per day after breakfast"
 		},
 		{
 			"name": "Carvedilol",
 			"dose": "3.125 mg",
 			"frequency": "1 pill",
-			"suggestedTime": "once per day before breakfast",
-			"startDate": "",
-			"endDate": "",
+			"suggestedTime": "2 pm",
+			"startDate": "07/08/2020",
+			"endDate": "07/16/2020",
 			"shape": "capsule",
 			"color": "blue",
-			"notes": ""
+			"notes": "once per day after lunch"
+		},
+		{
+			"name": "Pantoprazole",
+			"dose": "40 mg",
+			"frequency": "1 pill",
+			"suggestedTime": "8 pm",
+			"startDate": "05/30/2020",
+			"endDate": "08/30/2020",
+			"shape": "sphere",
+			"color": "violet",
+			"notes": "once per day before dinner"
+		},
+		{
+			"name": "Metformin",
+			"dose": "500 mg",
+			"frequency": "1 pill",
+			"suggestedTime": "10 pm",
+			"startDate": "05/30/2020",
+			"endDate": "08/30/2020",
+			"shape": "oval",
+			"color": "green",
+			"notes": "once per day after dinner"
+		},
+		{
+			"name": "Clopidogrel",
+			"dose": "75 mg",
+			"frequency": "1 pill",
+			"suggestedTime": "10 pm",
+			"startDate": "07/08/2020",
+			"endDate": "07/16/2020",
+			"shape": "sphere",
+			"color": "violet",
+			"notes": "once per day after dinner"
 		}
 	]
 }

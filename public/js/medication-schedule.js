@@ -43,9 +43,9 @@ $(document).ready(function () {
         $(this).addClass("active");
         var selectedDate = $(this).data().date;
         selectedDate === undefined ? selectedDate = "first-june" : $(this).data().date;
-        $(".schAccordion").each(function () {
+      /*  $(".schAccordion").each(function () {
             selectedDate === $(this).data().subscription ? $(this).show() : $(this).hide();
-        })
+        }) */
     });
 
     $(document).on('click', '.toggelSchMed input', function () {
