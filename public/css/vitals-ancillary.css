@@ -86,6 +86,7 @@
 	width: 25%;
 	text-align: left;
 	color: #0051BF;
+	text-decoration: none;
 }
 
 .parameters-form .btn-save {
@@ -227,6 +228,7 @@
 	width: 25%;
 	text-align: left;
 	color: #0051BF;
+	text-decoration: none;
 }
 
 .symptoms-form .btn-save {

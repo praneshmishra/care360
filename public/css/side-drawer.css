@@ -47,7 +47,8 @@ button.diagnostic-btn.active {
     font-weight: 500;
     color: #363C3F;
     padding-top: 10px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    text-decoration: none;
 }
 
 div#other-links a {
@@ -58,6 +59,7 @@ div#other-links a {
     color: #363C3F;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-decoration: none;
 }
 
 #links a .fa {
@@ -144,6 +146,7 @@ button.medication-btn, button.diagnostic-btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     padding-top: 0px;
+    text-decoration: none;
 }
 
 button.medication-btn.active, button.diagnostic-btn.active {

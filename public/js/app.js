@@ -10,6 +10,9 @@ $(document).ready(function () {
         $(".link-bc-secondary").show();
         $(".link-bc-secondary").text("Diagnostics");
         $(".link-bc-secondary").addClass("active");
+        setTimeout(() => {
+            favoritesCheck.get();
+        }, 100);
     });
 
     $(document).on('click', '.link-survey, .survey-ques-2 .survey-btn-group .btn-submit', function () {
@@ -19,6 +22,9 @@ $(document).ready(function () {
         $(".link-bc-secondary").show();
         $(".link-bc-secondary").text("Survey");
         $(".link-bc-secondary").addClass("active");
+        setTimeout(() => {
+            favoritesCheck.get();
+        }, 100);
     });
 
     $(document).on('click', '.medication-schedule, #toggelSchMed .schedule', function () {
@@ -52,6 +58,9 @@ $(document).ready(function () {
         $(".link-bc-last").show();
         $(".link-bc-last").text("Schedule");
         $(".link-bc-last").addClass("active");
+        setTimeout(() => {
+            favoritesCheck.get();
+        }, 100);
     });
 
     $(document).on('click', '.diagnostics-view, #toggleDiagnostics .d-view', function () {
@@ -125,6 +134,9 @@ $(document).ready(function () {
     $(document).on('click', '.link-home', function () {
         $("#breadcrumbs").hide();
         $("main").load("/html/cards.html");
+        setTimeout(() => {
+            favoritesCheck.get();
+        }, 100);
     });
 
     $(document).on('click','.showCardContent',function(){
@@ -132,7 +144,18 @@ $(document).ready(function () {
         $(this).next(".cardContent").slideToggle();
     });
 
+    favoritesCheck.get();
+
+    $(document).on('change', '.heartbox input.checkbox',  function () {
+        favoritesCheck.set();
+    });
+
+    $('a.logout').click(function () {
+        sessionStorage.removeItem('favorites');
+    });
 });
+
+var favorites = [];
 
 function populateUserName() {
     var email = getCookieValue("user");
@@ -157,4 +180,28 @@ function populateUserName() {
 function getCookieValue(a) {
     var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
     return b ? b.pop() : '';
+}
+
+var favoritesCheck = {
+    set: function() {
+        $('.heartbox input[type=checkbox]:checked').each(function () {
+            favorites.push({ id: this.id, value: this.checked });
+        });
+        sessionStorage.favorites = JSON.stringify(favorites);
+    },
+    get: function() {
+        if (sessionStorage.favorites != undefined) {
+            // Get the existing values out of sessionStorage
+            favorites = JSON.parse(sessionStorage.favorites);
+            // Loop through vitalsForm
+            for (var i = 0; i < favorites.length; i++) {
+                // Populate the form with what data you have for it
+                $('.heartbox input.checkbox').each(function () {
+                    if ($(this).attr('id') === favorites[i].id) {
+                        $(this).prop('checked', true);
+                    }
+                });
+            }
+        }
+    }
 }

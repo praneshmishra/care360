@@ -142,6 +142,7 @@
     width: 25%;
     text-align: left;
     color: #0051BF;
+    text-decoration: none;
 }
 
 .vitals-btn-group .btn-save {
