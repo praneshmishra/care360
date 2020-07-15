@@ -21,6 +21,10 @@
     background-color: #0051BF!important;
 }
 
+.navbar-dark .navbar-toggler-icon {
+    background-image: url('../images/hamburger.svg');
+}
+
 .navbar-header.bg-primary {
     background-color: #0051BF!important;
 }
