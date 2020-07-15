@@ -7,7 +7,7 @@
 			"suggestedTime": "9 am",
 			"startDate": "05/30/2020",
 			"endDate": "06/01/2020",
-			"shape": "capsule",
+			"shape": "medicine-shape1",
 			"color": "red",
 			"notes": "once per day before breakfast"
 		},
@@ -18,8 +18,8 @@
 			"suggestedTime": "9 am",
 			"startDate": "07/08/2020",
 			"endDate": "07/16/2020",
-			"shape": "oval",
-			"color": "brown",
+			"shape": "medicine-shape2",
+			"color": "cyan",
 			"notes": "once per day before breakfast"
 		},
 		{
@@ -29,7 +29,7 @@
 			"suggestedTime": "11 am",
 			"startDate": "05/30/2020",
 			"endDate": "08/30/2020",
-			"shape": "capsule",
+			"shape": "medicine-shape3",
 			"color": "blue",
 			"notes": "once per day after breakfast"
 		},
@@ -40,8 +40,8 @@
 			"suggestedTime": "11 am",
 			"startDate": "05/30/2020",
 			"endDate": "08/30/2020",
-			"shape": "capsule",
-			"color": "brown",
+			"shape": "medicine-shape4",
+			"color": "cyan",
 			"notes": "once per day after breakfast"
 		},
 		{
@@ -51,7 +51,7 @@
 			"suggestedTime": "2 pm",
 			"startDate": "07/08/2020",
 			"endDate": "07/16/2020",
-			"shape": "capsule",
+			"shape": "medicine-shape2",
 			"color": "blue",
 			"notes": "once per day after lunch"
 		},
@@ -62,8 +62,8 @@
 			"suggestedTime": "8 pm",
 			"startDate": "05/30/2020",
 			"endDate": "08/30/2020",
-			"shape": "sphere",
-			"color": "violet",
+			"shape": "medicine-shape4",
+			"color": "lightGreen",
 			"notes": "once per day before dinner"
 		},
 		{
@@ -73,8 +73,8 @@
 			"suggestedTime": "10 pm",
 			"startDate": "05/30/2020",
 			"endDate": "08/30/2020",
-			"shape": "oval",
-			"color": "green",
+			"shape": "medicine-shape3",
+			"color": "red",
 			"notes": "once per day after dinner"
 		},
 		{
@@ -84,8 +84,8 @@
 			"suggestedTime": "10 pm",
 			"startDate": "07/08/2020",
 			"endDate": "07/16/2020",
-			"shape": "sphere",
-			"color": "violet",
+			"shape": "medicine-shape5",
+			"color": "lightGreen",
 			"notes": "once per day after dinner"
 		}
 	]
