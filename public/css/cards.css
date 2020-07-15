@@ -112,6 +112,15 @@ body{
     margin-left:24px;
 }
 
+.notify-medication {
+    display: flex;
+    padding: 0px 0 0 5px;
+}
+
+.notify-count {
+    padding: 0px 0 0 7px;
+}
+
 .card-text {
     flex: 1;
     max-width:230px;
