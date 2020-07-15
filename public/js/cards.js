@@ -1,11 +1,14 @@
-var medicationData, currentDateTime, closestTime; 
+var medicationData, currentDateTime, closestTime;
 
-$(document).on('click', '.showCardContent', function () {
-    getMedicationList();
+$(document).ready(function() {
     let date = new Date();
     let options = { year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" };
     currentDateTime = date.toLocaleDateString("en-us", options);
     $(".showCardContent  .card-text .date-info").text("Due on " + currentDateTime);
+});
+
+$(document).on('click', '.showCardContent', function () {
+    getMedicationList();
 });
 
 function getMedicationList() {
