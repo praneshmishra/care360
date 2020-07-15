@@ -1,4 +1,4 @@
-var medicationData, currentDateTime;
+var medicationData, currentDateTime, closestTime;
 
 $(document).ready(function () {
     getMedicationList();
@@ -83,8 +83,9 @@ function getMedicationByTime(calendarInput) {
         timeDiff.push({ hour: time, diff: k });
     });
 
-    timeDiff.sort((a, b) => {
-         console.log(a.diff - b.diff);
-    });
-
+    timeDiff.sort((a,b) => {
+        return a.diff - b.diff;
+      });
+      
+      closestTime = timeDiff[0].hour;
 }
