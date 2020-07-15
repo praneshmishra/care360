@@ -457,17 +457,56 @@ svg #main-circ {
     padding-bottom: 4px;
 }
 
-.cardContent .card-body:nth-of-type(even) .icon {
-    background-color: rgb(235, 222, 249);
-    color: rgb(163, 104, 227);
+.cardContent .card-body .icon {
+    cursor: pointer;    
+    text-align: center;
+    padding: 0;
+    position: relative;
 }
 
-.cardContent .card-body .icon span {
-    font-size: 30px;
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%,-50%);
+.cardContent .card-body .icon.red {
+    background-color: rgb(255, 204, 204);
+}
+
+.cardContent .card-body .icon.blue {
+    background-color: rgb(210, 230, 255);
+}
+
+.cardContent .card-body .icon.cyan {
+    background-color: rgb(182, 255, 253);
+}
+
+.cardContent .card-body .icon.lightGreen {
+    background-color: rgb(209, 239, 180);
+}
+
+.cardContent .card-body .icon div {
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 100%;
+    margin: 0 auto;
+    background-position: 50% 50%;
+}
+
+.cardContent .card-body .icon .medicine-shape1 {
+    background-image: url(../images/schedule/medicine-shape1.svg);
+    width: 20px;
+}
+
+.cardContent .card-body .icon .medicine-shape2 {
+    background-image: url(../images/schedule/medicine-shape2.svg);
+}
+
+.cardContent .card-body .icon .medicine-shape3 {
+    background-image: url(../images/schedule/medicine-shape3.svg);
+}
+
+.cardContent .card-body .icon .medicine-shape4 {
+    background-image: url(../images/schedule/medicine-shape4.svg);
+}
+
+.cardContent .card-body .icon .medicine-shape5 {
+    background-image: url(../images/schedule/medicine-shape5.svg);
 }
 
 .cardContent .card-body .info {
