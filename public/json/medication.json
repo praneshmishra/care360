@@ -56,6 +56,17 @@
 			"notes": "once per day after lunch"
 		},
 		{
+			"name": "Metmorfin",
+			"dose": "100 mg",
+			"frequency": "1 pill",
+			"suggestedTime": "4:30 pm",
+			"startDate": "07/10/2020",
+			"endDate": "07/17/2020",
+			"shape": "capsule",
+			"color": "red",
+			"notes": "once per day before breakfast"
+		},
+		{
 			"name": "Pantoprazole",
 			"dose": "40 mg",
 			"frequency": "1 pill",
@@ -87,6 +98,17 @@
 			"shape": "medicine-shape5",
 			"color": "lightGreen",
 			"notes": "once per day after dinner"
+		},
+		{
+			"name": "Pantoprazole",
+			"dose": "50 mg",
+			"frequency": "1/2 pill",
+			"suggestedTime": "4:30 pm",
+			"startDate": "07/13/2020",
+			"endDate": "07/20/2020",
+			"shape": "",
+			"color": "",
+			"notes": "once per day"
 		}
 	]
 }
