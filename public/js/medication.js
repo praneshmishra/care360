@@ -80,7 +80,7 @@ function showMedicationList() {
             $.each(data.medication, function (key, value) {
                 if (value.name !== "default") {
                     var mediNotes = value.notes !== "" ? ", " + value.notes : value.notes;
-                    medicationlist = medicationlist + '<div class="card-body" data-medication="' + value.name + '"><div class="row"><div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>' +
+                    medicationlist = medicationlist + '<div class="card-body" data-medication="' + value.name + '"><div class="row"><div class="col-1 col-sm-2 icon ' + value.color + '"><div class="' + value.shape + '"></div></div>' +
                         '<div class="col-7 col-sm-6 info"><h6>' + value.name + ' ' + value.dose + '</h6>' +
                         '<p>' + value.frequency + mediNotes + '</p></div>' +
                         '<div class="col-4 col-sm-4 action"><div class="align-center">' +
@@ -121,7 +121,7 @@ function sortJsonByTime(calendarInput) {
                 if (calendarDate.getTime() <= medEndDate.getTime()
                     && calendarDate.getTime() >= medStartDate.getTime()) {
                     var mediNotes = value.notes !== "" ? ", " + value.notes : value.notes;
-                    mediList = mediList + '<div class="card-body"><div class="row"><div class="col-1 col-sm-2 icon"><span>&#9737;</span></div>' +
+                    mediList = mediList + '<div class="card-body"><div class="row"><div class="col-1 col-sm-2 icon ' + value.color + '"><div class="' + value.shape + '"></div></div>' +
                         '<div class="col-7 col-sm-6 info"><h6>' + value.name + ' ' + value.dose + '</h6>' +
                         '<p>' + value.frequency + mediNotes + '</p></div>' +
                         '<div class="col-4 col-sm-4 action"><div class="align-center">' +
