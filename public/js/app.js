@@ -10,9 +10,7 @@ $(document).ready(function () {
         $(".link-bc-secondary").show();
         $(".link-bc-secondary").text("Diagnostics");
         $(".link-bc-secondary").addClass("active");
-        setTimeout(() => {
-            favoritesCheck.get();
-        }, 100);
+        getFavorites();
     });
 
     $(document).on('click', '.link-survey, .survey-ques-2 .survey-btn-group .btn-submit', function () {
@@ -22,9 +20,7 @@ $(document).ready(function () {
         $(".link-bc-secondary").show();
         $(".link-bc-secondary").text("Survey");
         $(".link-bc-secondary").addClass("active");
-        setTimeout(() => {
-            favoritesCheck.get();
-        }, 100);
+        getFavorites();
     });
 
     $(document).on('click', '.medication-schedule, #toggelSchMed .schedule', function () {
@@ -58,9 +54,7 @@ $(document).ready(function () {
         $(".link-bc-last").show();
         $(".link-bc-last").text("Schedule");
         $(".link-bc-last").addClass("active");
-        setTimeout(() => {
-            favoritesCheck.get();
-        }, 100);
+        getFavorites();
     });
 
     $(document).on('click', '.diagnostics-view, #toggleDiagnostics .d-view', function () {
@@ -83,6 +77,7 @@ $(document).ready(function () {
         $(".link-bc-last").show();
         $(".link-bc-last").text("Results");
         $(".link-bc-last").addClass("active");
+        getFavorites();
     });
 
     $(document).on('click', '.link-vitals, #toggleVitals .v-vitals', function () {
@@ -134,19 +129,17 @@ $(document).ready(function () {
     $(document).on('click', '.link-home', function () {
         $("#breadcrumbs").hide();
         $("main").load("/html/cards.html");
-        setTimeout(() => {
-            favoritesCheck.get();
-        }, 100);
+        getFavorites();
     });
 
-    $(document).on('click','.showCardContent',function(){
+    $(document).on('click', '.showCardContent', function () {
         $(this).toggleClass("mb-0");
         $(this).next(".cardContent").slideToggle();
     });
 
     favoritesCheck.get();
 
-    $(document).on('change', '.heartbox input.checkbox',  function () {
+    $(document).on('change', '.heartbox input.checkbox', function () {
         favoritesCheck.set();
     });
 
@@ -183,25 +176,25 @@ function getCookieValue(a) {
 }
 
 var favoritesCheck = {
-    set: function() {
-        $('.heartbox input[type=checkbox]:checked').each(function () {
+    set: function () {
+        $('.heartbox input[type=checkbox]').each(function () {
             favorites.push({ id: this.id, value: this.checked });
         });
         sessionStorage.favorites = JSON.stringify(favorites);
     },
-    get: function() {
+    get: function () {
         if (sessionStorage.favorites != undefined) {
             // Get the existing values out of sessionStorage
             favorites = JSON.parse(sessionStorage.favorites);
-            // Loop through vitalsForm
             for (var i = 0; i < favorites.length; i++) {
-                // Populate the form with what data you have for it
-                $('.heartbox input.checkbox').each(function () {
-                    if ($(this).attr('id') === favorites[i].id) {
-                        $(this).prop('checked', true);
-                    }
-                });
+                $('#' + favorites[i].id).prop('checked', favorites[i].value);
             }
         }
     }
+}
+
+function getFavorites() {
+    setTimeout(() => {
+        favoritesCheck.get();
+    }, 100);
 }
