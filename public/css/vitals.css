@@ -48,18 +48,18 @@
 }
 
 #graphTableVitals.dataTable thead .sorting_asc, #gridTableVitals.dataTable thead .sorting_asc {
-	background: url(../images/Diagnostics/up-arrow.svg) no-repeat 95% 17px;
+	background: url(../images/sort-up.svg) no-repeat 95% 17px;
     background-size: 10px;
 }
 
 #graphTableVitals.dataTable thead .sorting_desc, #gridTableVitals.dataTable thead .sorting_desc {
-	background: url(../images/Diagnostics/down-arrow.svg) no-repeat 95% 17px;
+	background: url(../images/sort-down.svg) no-repeat 95% 17px;
     background-size: 10px;
 }
 
 #graphTableVitals.dataTable thead .sorting, #gridTableVitals.dataTable thead .sorting {
-	background: url(../images/Diagnostics/up-and-down.svg) no-repeat 95% 13px;
-    background-size: 14px;
+	background: url(../images/sort.svg) no-repeat 95% 13px;
+    background-size: 10px;
 }
 
 #toggleVitals, 

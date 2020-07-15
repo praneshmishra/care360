@@ -18,12 +18,21 @@ html {
 
 .bell-counter {
     position: absolute;
-    top: 14px;
+    top: 15px;
     right: 10px;
     padding: 0 2px;
     border-radius: 50%;
     background: white;
     color: #0051bf;
-    font-size: 10px;
+    font-size: 13px;
     font-family: "Roboto";
+}
+
+.header-message {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.header-notification {
+    width: 29px;
 }
