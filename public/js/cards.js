@@ -1,11 +1,14 @@
 var medicationData, currentDateTime, closestTime;
 
-$(document).ready(function() {
+$(document).ready(function () {
     let date = new Date();
     let options = { year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" };
     currentDateTime = date.toLocaleDateString("en-us", options);
     $(".showCardContent  .card-text .date-info").text("Due on " + currentDateTime);
+});
 
+$(document).on('click', '.showCardContent', function () {
+    getMedicationList();
     $(document).on('click', '.notify', function () {
         $(this).toggleClass("active");
     });
@@ -41,10 +44,6 @@ $(document).ready(function() {
     }
 });
 
-$(document).on('click', '.showCardContent', function () {
-    getMedicationList();
-});
-
 function getMedicationList() {
     $.ajax({
         type: 'GET',
@@ -74,7 +73,7 @@ function getMedicationByTime(calendarInput) {
         }
     }
     closestTime = getClosestTime(timeArray);
-    
+
     for (var key in groupedByTime) {
         if (groupedByTime.hasOwnProperty(key) && key !== "") {
             $.each(groupedByTime[key], function (key, value) {
@@ -87,11 +86,11 @@ function getMedicationByTime(calendarInput) {
                     && calendarDate.getTime() >= medStartDate.getTime()) {
                     if (value.suggestedTime == closestTime) {
                         var mediNotes = value.notes !== "" ? ", " + value.notes : value.notes;
-                    mediList = mediList + '<div class="card-body"><div class="row"><div class="col-1 col-sm-2 icon ' + value.color +'"><div class="' + value.shape + '"></div></div>' +
-                        '<div class="col-7 col-sm-6 info"><h6>' + value.name + ' ' + value.dose + '</h6>' +
-                        '<p>' + value.frequency + mediNotes + '</p></div>' +
-                        '<div class="col-4 col-sm-4 action"><div class="align-center">' +
-                        '<span class="notify"></span><span class="alert-me"></span></div></div></div></div>';
+                        mediList = mediList + '<div class="card-body"><div class="row"><div class="col-1 col-sm-2 icon ' + value.color + '"><div class="' + value.shape + '"></div></div>' +
+                            '<div class="col-7 col-sm-6 info"><h6>' + value.name + ' ' + value.dose + '</h6>' +
+                            '<p>' + value.frequency + mediNotes + '</p></div>' +
+                            '<div class="col-4 col-sm-4 action"><div class="align-center">' +
+                            '<span class="notify"></span><span class="alert-me"></span></div></div></div></div>';
                         notificationCount = notificationCount + 1;
                     }
                 }
@@ -107,7 +106,7 @@ function getMedicationByTime(calendarInput) {
             $(".cardContent").html(mediSchedule);
         }
     }
-    
+
 }
 
 function getClosestTime(timeArray) {
