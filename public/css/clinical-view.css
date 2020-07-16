@@ -1,0 +1,154 @@
+.right-75px {
+    right: 75px !important;
+}
+
+.no-border-radius {
+    border-radius: 0 !important;
+}
+
+.custom-blue {
+    background-color: #0051BF !important;
+}
+
+.header-logo-span {
+    margin: auto 100px;
+}
+
+.navbar-right {
+    position: absolute;
+    right: 250px;
+    font-size: 22px;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.border-none {
+   border: none !important;
+}
+
+.header-tabs {
+   margin: 10px; 
+}
+
+.header-tabs a {
+    font-size: 16px;
+    color: #333 !important;
+    margin: auto 10px;
+}
+
+.bell {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.bell-counter {
+    position: relative;
+    top: -10px;
+    left: -16px;
+    padding: 2px;
+    border-radius: 50%;
+    background: white;
+    color: #0051bf;
+    font-size: 10px;
+    font-family: "Roboto";
+}
+
+ header .full-width-divider .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border-bottom: 5px solid #0051BF;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.user-profile-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.user-name {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.container-background {
+    background-color: #e4f1fd;
+}
+
+.tab-panel a {
+    color: #333;
+}
+
+.full-width-divider:after {
+    content: "" !important;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+}
+
+.full-width-divider .nav-tabs {
+    border-bottom: none;
+}
+
+.full-width-divider .nav-tabs li {
+    margin-bottom: 0;
+}
+
+.full-width-divider .nav-tabs>li>a {
+    margin-right: 0;
+    line-height: 1.42857143; 
+    border: none; 
+}
+.nav>li>a:hover {
+    background-color: #fff;
+}
+
+.nav-tabs.nav-tabs-margin {
+    margin: auto 215px;
+}
+
+.nav-tabs .tab-panel-margin {
+    margin: 30px 30px;
+}
+
+.tab-content .custom-tab-pane.active {
+    display: flex;
+    margin: 50px auto;
+}
+
+.my-patients {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.risk-patients-tabs {
+    width: 50%;
+    background: #fff;
+    border: 1px solid #0051BF;
+}
+
+.risk-patients-tabs .nav-tabs>li>a {
+    border: none;
+}
+
+.risk-patients-tabs .tab-panel:not(:last-child) {
+    border-right: 1px solid #0051BF;
+}
+
+.risk-patients-tabs .nav-tabs .tab-panel.active {
+    background-color: #0051BF;
+    color: #fff;
+}
+
+.nav.risk-tabs li a {
+    padding: 6px 38px;
+}
+
+.custom-tab-pane .risk-patients-tabs .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li>a:hover {
+    border: none;
+}

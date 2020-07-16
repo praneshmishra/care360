@@ -25,6 +25,11 @@ router.get('/index', function (req, res) {
   //__dirname : It will resolve to your project folder.
 });
 
+router.get('/dashboard', function (req, res) {
+  res.sendFile(path.join(__dirname + '/clinical-view.html'));
+  //__dirname : It will resolve to your project folder.
+});
+
 
 app.post("/add-tasks", function(req, res) {
   filePath = __dirname + '/public/json/medication.json';
