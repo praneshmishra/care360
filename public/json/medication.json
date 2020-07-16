@@ -50,7 +50,7 @@
 			"frequency": "1 pill",
 			"suggestedTime": "2 pm",
 			"startDate": "07/08/2020",
-			"endDate": "07/30/2020",
+			"endDate": "07/16/2020",
 			"shape": "medicine-shape2",
 			"color": "blue",
 			"notes": "once per day after lunch"
@@ -94,7 +94,7 @@
 			"frequency": "1 pill",
 			"suggestedTime": "10 pm",
 			"startDate": "07/08/2020",
-			"endDate": "07/20/2020",
+			"endDate": "07/16/2020",
 			"shape": "medicine-shape5",
 			"color": "lightGreen",
 			"notes": "once per day after dinner"

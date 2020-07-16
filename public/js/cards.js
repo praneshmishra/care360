@@ -69,7 +69,18 @@ function getMedicationByTime(calendarInput) {
 
     for (var key in groupedByTime) {
         if (groupedByTime.hasOwnProperty(key) && key !== "") {
-            timeArray.push(key);
+            $.each(groupedByTime[key], function (key, value) {
+                var medStartDate = value.startDate;
+                var medEndDate = value.endDate;
+                medStartDate = new Date(medStartDate);
+                medEndDate = new Date(medEndDate);  
+                calendarDate = new Date();
+                calendarDate.setHours(0,0,0,0);
+                if (calendarDate.getTime() <= medEndDate.getTime()
+                    && calendarDate.getTime() >= medStartDate.getTime()) {
+                    timeArray.push(value.suggestedTime);
+                }
+            });
         }
     }
     closestTime = getClosestTime(timeArray);
@@ -82,6 +93,7 @@ function getMedicationByTime(calendarInput) {
                 medStartDate = new Date(medStartDate);
                 medEndDate = new Date(medEndDate);
                 calendarDate = new Date();
+                calendarDate.setHours(0,0,0,0);
                 if (calendarDate.getTime() <= medEndDate.getTime()
                     && calendarDate.getTime() >= medStartDate.getTime()) {
                     if (value.suggestedTime == closestTime) {
