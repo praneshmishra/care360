@@ -4,44 +4,19 @@ $(document).ready(function () {
     showMedicationList();
 });
 
+function selectAll(self, that) {
+    if (!self.hasClass("active")) {
+        self.addClass("active");
+    }
+
+    if (!that.hasClass("active")) {
+        self.removeClass("active");
+    }
+}
+
 $(document).on('click', '.carousel-item li', function () {
     calendarInput = $(this).data('date');
     sortJsonByTime(calendarInput);
-    
-    $(document).on('click', '.notify', function () {
-        $(this).toggleClass("active");
-    });
-
-    $(document).on('click', '.alert-me', function () {
-        $(this).toggleClass("active");
-    });
-
-    $(document).on('click', '.notifyAll', function () {
-        $(this).toggleClass("active");
-        var that = $(this);
-        $(this).parents(".collapse, .cardContent").find(".notify").each(function () {
-            selectAll($(this), that);
-        });
-    });
-
-    $(document).on('click', '.checkAll', function () {
-        $(this).toggleClass("active");
-        var that = $(this);
-        $(this).parents(".collapse, .cardContent").find(".alert-me").each(function () {
-            selectAll($(this), that);
-        });
-    });
-
-    function selectAll(self, that) {
-        if (!self.hasClass("active")) {
-            self.addClass("active");
-        }
-
-        if (!that.hasClass("active")) {
-            self.removeClass("active");
-        }
-    }
-
 });
 
 $(document).on('click', '#medicationList', function () {
@@ -179,6 +154,30 @@ function sortJsonByTime(calendarInput) {
 
             $("#scheduleAccordion #heading1 .btn").removeClass("collapsed");
             $("#scheduleAccordion #collapse1").addClass("show");
+
+            $(document).on('click', '.notify', function () {
+                $(this).toggleClass("active");
+            });
+            
+            $(document).on('click', '.alert-me', function () {
+                $(this).toggleClass("active");
+            });
+            
+            $(document).on('click', '.notifyAll', function () {
+                $(this).toggleClass("active");
+                var that = $(this);
+                $(this).parents(".collapse, .cardContent").find(".notify").each(function () {
+                    selectAll($(this), that);
+                });
+            });
+            
+            $(document).on('click', '.checkAll', function () {
+                $(this).toggleClass("active");
+                var that = $(this);
+                $(this).parents(".collapse, .cardContent").find(".alert-me").each(function () {
+                    selectAll($(this), that);
+                });
+            });
 
         }
     }
