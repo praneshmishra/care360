@@ -5,8 +5,8 @@
 			"dose": "100 mg",
 			"frequency": "1 pill",
 			"suggestedTime": "9 am",
-			"startDate": "05/30/2020",
-			"endDate": "06/01/2020",
+			"startDate": "07/20/2020",
+			"endDate": "07/30/2020",
 			"shape": "medicine-shape1",
 			"color": "red",
 			"notes": "once per day before breakfast"
@@ -17,7 +17,7 @@
 			"frequency": "1 pill",
 			"suggestedTime": "9 am",
 			"startDate": "07/08/2020",
-			"endDate": "07/16/2020",
+			"endDate": "07/30/2020",
 			"shape": "medicine-shape2",
 			"color": "cyan",
 			"notes": "once per day before breakfast"
@@ -50,7 +50,7 @@
 			"frequency": "1 pill",
 			"suggestedTime": "2 pm",
 			"startDate": "07/08/2020",
-			"endDate": "07/16/2020",
+			"endDate": "07/30/2020",
 			"shape": "medicine-shape2",
 			"color": "blue",
 			"notes": "once per day after lunch"
@@ -61,7 +61,7 @@
 			"frequency": "1 pill",
 			"suggestedTime": "4:30 pm",
 			"startDate": "07/10/2020",
-			"endDate": "07/17/2020",
+			"endDate": "07/20/2020",
 			"shape": "medicine-shape1",
 			"color": "cyan",
 			"notes": "once per day before breakfast"
@@ -94,7 +94,7 @@
 			"frequency": "1 pill",
 			"suggestedTime": "10 pm",
 			"startDate": "07/08/2020",
-			"endDate": "07/16/2020",
+			"endDate": "07/20/2020",
 			"shape": "medicine-shape5",
 			"color": "lightGreen",
 			"notes": "once per day after dinner"
